@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Oleksandr Kotovskyi](https://up.htmlacademy.ru/adaptive/24/user/1688167).
-* Наставник: `Неизвестно`.
+- Студент: [Oleksandr Kotovskyi](https://up.htmlacademy.ru/adaptive/24/user/1688167).
+- Наставник: `Андрей Грачев`.
 
 ---
 
