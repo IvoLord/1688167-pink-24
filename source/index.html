@@ -6,17 +6,18 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img
-          class="page-header__logo-image"
-          src="./img/header-logo.svg"
-          alt="Pink."
-          width="74"
-          height="23"
-        />
-      </a>
-
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <!-- ? обязательно менять было клас с page-header__logo на main-nav__logo ? -->
+          <img
+            class="main-nav__logo-image"
+            src="./img/header-logo.svg"
+            alt="Pink."
+            width="74"
+            height="23"
+          />
+        </a>
+
         <button class="main-nav__toggle" type="button">
           <span class="visualy-hidden">Открыть меню</span>
         </button>
@@ -28,21 +29,20 @@
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="">Pink</h1>
 
       <section class="intro">
         <h2 class="visualy-hidden">Интро</h2>
-        <button class="intro__button-download" type="button">
+        <a
+          class="intro__button-download"
+          href="https://www.apple.com/app-store/"
+        >
           Скачать приложение
-        </button>
+        </a>
 
         <div class="intro__social-wraper">
           <ul class="intro__social-list social-list">
             <li class="social-list__item">
-              <a href="#">
+              <a href="https://www.apple.com/app-store/">
                 <img
                   src="img/apple-logo.svg"
                   width="47"
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#">
+              <a href="https://play.google.com/store/apps">
                 <img
                   src="img/android-logo.svg"
                   width="43"
@@ -65,7 +65,7 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#">
+              <a href="https://www.microsoft.com/pl-pl/store/apps">
                 <img
                   src="img/microsoft-logo.svg"
                   width="44"
@@ -82,6 +82,10 @@
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
+    </header>
+
+    <main class="page-main">
+      <h1 class="">Pink</h1>
 
       <section class="information">
         <h2 class="visualy-hidden">Информация</h2>
@@ -138,14 +142,14 @@
           </li>
         </ul>
 
-        <ol class="rewiew__pagination-list">
-          <li class="rewiew__pagination-item">
+        <ol class="review__pagination-list">
+          <li class="review__pagination-item">
             <button type="button"><span class="visualy-hidden">1</span></button>
           </li>
-          <li class="rewiew__pagination-item">
+          <li class="review__pagination-item">
             <button type="button"><span class="visualy-hidden">2</span></button>
           </li>
-          <li class="rewiew__pagination-item">
+          <li class="review__pagination-item">
             <button type="button"><span class="visualy-hidden">3</span></button>
           </li>
         </ol>
@@ -233,28 +237,32 @@
       <section class="contacts">
         <h2 class="visualy-hidden">Контакты</h2>
 
-        <p class="comtacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
 
         <div class="contacts__list">
-          <div class="contacts__item">
-            <h3 class="contacts-item__title">Звоните:</h3>
-            <p class="contacts-item__text">+7 (812) 555-66-66</p>
+          <div class="contacts__item contacts-item">
+            <p class="contacts-item__title">Звоните:</p>
+            <a class="contacts-item__text" href="tel:+78125556666"
+              >+7 (812) 555-66-66</a
+            >
           </div>
 
-          <div class="contacts__item">
-            <h3 class="contacts-item__title">Пишите:</h3>
-            <p class="contacts-item__text">mail@htmlacademy.ru</p>
+          <div class="contacts__item contacts-item">
+            <p class="contacts-item__title">Пишите:</p>
+            <a class="contacts-item__text" href="mailto:mail@htmlacademy.ru"
+              >mail@htmlacademy.ru</a
+            >
           </div>
 
-          <div class="contacts__item">
-            <h3 class="contacts-item__title">Приезжайте в гости:</h3>
+          <div class="contacts__item contacts-item">
+            <p class="contacts-item__title">Приезжайте в гости:</p>
             <p class="contacts-item__text">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
 
-        <a class="contacts__map" href="#">
+        <div class="contacts__map" href="#">
           <img src="img/map.png" width="320" height="200" alt="Карта." />
-        </a>
+        </div>
       </section>
     </main>
 
@@ -266,21 +274,16 @@
       <ul class="page-footer__social-list footer-social">
         <li class="footer-social__item twitter">
           <a href="#">
-            <img src="img/twitter.svg" width="18" height="14" alt="Twitter." />
             <span class="visualy-hidden">Twitter</span>
           </a>
         </li>
         <li class="footer-social__item facebook">
           <a href="#">
-            <img src="img/facebook.svg" width="9" height="18" alt="Facebook." />
-
             <span class="visualy-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social__item youtube">
           <a href="#">
-            <img src="img/youtube.svg" width="15" height="13" alt="YouTube." />
-
             <span class="visualy-hidden">YouTube</span>
           </a>
         </li>
