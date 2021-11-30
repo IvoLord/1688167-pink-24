@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Форма</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img
+            class="main-nav__logo-image"
+            src="./img/header-logo.svg"
+            alt="Pink."
+            width="74"
+            height="23"
+          />
+        </a>
+
+        <button class="main-nav__toggle" type="button">
+          <span class="visualy-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+
+      <span class="page-header__title"
+        >Конкурс на самое безбашенное путешествие с Пинк</span
+      >
+    </header>
+
+    <main class="page-main">
+      <h1 class="visualy-hidden">Форма для конкурса</h1>
+
+      <p>
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
+
+      <form action="">
+        <fieldset class="concourse-form__group">
+          <legend class="visualy-hidden">ФИО</legend>
+
+          <ul class="concourse-form__list">
+            <li class="concourse-form__item">
+              <label class="concourse-form__label"
+                ><span class="concourse-form__label-text"> Фамилия: </span>
+                <input
+                  class="concourse-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Укажите фамилию *"
+                  required
+                />
+              </label>
+            </li>
+            <li class="concourse-form__item">
+              <label class="concourse-form__label"
+                ><span class="concourse-form__label-text"> Имя: </span>
+                <input
+                  class="concourse-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Введите ваше имя *"
+                  required
+                />
+              </label>
+            </li>
+            <li class="concourse-form__item">
+              <label class="concourse-form__label"
+                ><span class="concourse-form__label-text"> Отчество:</span>
+                <input
+                  class="concourse-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Ну и отчество тоже"
+                />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="concourse-form__group">
+          <legend class="visualy-hidden">Ваши достижения</legend>
+
+          <p class="concourse-form__group-title">
+            Ваши безбашенные достижения в путешествии
+          </p>
+
+          <ul class="concourse-form__list">
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Сделал селфи с акулой</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Обгорел на пляже</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Видел Чака Норриса</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Накупил сувениров</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Удержал башню</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Разгромил отель</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="concourse-form__group">
+          <legend class="visually-hidden">Контактные данные</legend>
+          <ul class="concourse-form__list">
+            <li class="concourse-form__item">
+              <label class="concourse-form__label"
+                ><span class="concourse-form__label-text">Номер телефона</span>
+                <input
+                  class="concourse-form__input"
+                  type="tel"
+                  name="contact"
+                  placeholder="Номер, пожалуйста"
+                />
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="concourse-form__label"
+                ><span class="concourse-form__label-text">Адрес почты</span>
+                <input
+                  class="concourse-form__input"
+                  type="email"
+                  name="contact"
+                  placeholder="Введите почту *"
+                  required
+                />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="concourse-form__group">
+          <legend class="visualy-hidden">Тип приложеия</legend>
+
+          <p class="concourse-form__group-title">
+            С каким приложением путешествовали?
+          </p>
+
+          <ul class="concourse-form__list">
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="radio"
+                  name="os"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Pink для iOS</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="radio"
+                  name="os"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Pink на Android</span>
+              </label>
+            </li>
+
+            <li class="concourse-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="radio"
+                  name="os"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Windows Phone</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="concourse-form__group">
+          <legend class="visualy-hidden">Отзыв</legend>
+
+          <p class="concourse-form__group-title">Опишите свои эмоции</p>
+
+          <label class="concourse-form__label">
+            <textarea class="concourse-form__input" name="comment"></textarea>
+          </label>
+        </fieldset>
+
+        <button class="concourse-form__button" type="button">
+          Отправить форму
+        </button>
+
+        <p class="concourse-form__required-info">
+          <span class="concourse-form__required-info--color">*</span> —
+          обязательные поля
+        </p>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logotype-blue-tablet.svg" alt="Логотип." />
+      </a>
+
+      <ul class="page-footer__social-list footer-social">
+        <li class="footer-social__item twitter">
+          <a href="#">
+            <span class="visualy-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer-social__item facebook">
+          <a href="#">
+            <span class="visualy-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social__item youtube">
+          <a href="#">
+            <span class="visualy-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <img
+          src="img/html-academy.svg"
+          width="27"
+          height="34"
+          alt="HTML Academy."
+        />
+      </a>
+    </footer>
+  </body>
+</html>
