@@ -1,0 +1,135 @@
+.price {
+  padding-top: 127px;
+  padding-bottom: 50px;
+  background: linear-gradient(172deg, #ffffff00 15%, #f2f2f2 15%);
+}
+
+.price__table {
+  width: 100%;
+}
+
+.price__cell {
+  margin: 0;
+  padding: 0;
+}
+
+.price__head {
+  text-align: center;
+  background-color: $color-4;
+  color: $color-2;
+}
+
+.price__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-top: 19px;
+}
+
+.price__price {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.price__row:not(.price__row--head) .price__cell {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 25px 42px;
+  outline: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.price__cell-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price__row--filter .price__cell-text {
+  &--economy::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+
+  &--standart::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+
+  &--vip::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+}
+
+.price__row--smile .price__cell-text {
+  &--economy::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/no.svg") no-repeat right;
+  }
+
+  &--standart::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+
+  &--vip::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+}
+
+.price__row--comments .price__cell-text {
+  &--economy::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/no.svg") no-repeat right;
+  }
+
+  &--standart::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/no.svg") no-repeat right;
+  }
+
+  &--vip::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background: url("../../../img/price/yes.svg") no-repeat right;
+  }
+}
+
+.price__pagination-list {
+  width: 56px;
+  margin: 0 auto;
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}

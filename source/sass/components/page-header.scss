@@ -1,0 +1,32 @@
+.page-header {
+  position: relative;
+  color: $color-2;
+  background-color: $color-1;
+  background-size: cover;
+  min-height: 237px;
+}
+
+.page-header__wrap {
+  color: $color-2;
+  background: url("../../img/page-header/back-mobile.jpg") no-repeat $color-1;
+  background-size: cover;
+  min-height: 237px;
+
+  &--index {
+    background: url("../../img/page-header/phone-background.png") no-repeat bottom, url("../../img/page-header/back-mobile.jpg") no-repeat $color-1;
+    background-size: auto, cover;
+    min-height: 462px;
+  }
+}
+
+.page-header__title {
+  margin: 0;
+  padding: 100px 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: $font-size-3;
+  font-weight: $font-weight-1;
+  line-height: $line-height-3;
+}
+

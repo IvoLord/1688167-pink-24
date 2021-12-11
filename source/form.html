@@ -3,55 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <title>Форма</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <img
-            class="main-nav__logo-image"
-            src="./img/header-logo.svg"
-            alt="Pink."
-            width="74"
-            height="23"
-          />
-        </a>
+      <div class="page-header__wrap">
+        <nav class="page-header__main-nav main-nav">
+          <div class="main-nav__wrap-nav">
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+            <a class="main-nav__logo" href="index.html">
+              <img
+                class="main-nav__logo-image"
+                src="./img/header-logo.svg"
+                alt="Pink."
+                width="74"
+                height="23"
+              />
+            </a>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+            <button class="main-nav__toggle button button__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
 
-      <h1 class="page-header__title">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
+          <ul class="main-nav__list visually-hidden">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-header__wrap-title">
+          <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </div>
     </header>
 
-    <main class="page-main">
-      <p class="page-main__text">
+    <main class="page__page-main page-main">
+      <section class="page__page-form page-form">
+
+      <h2 class="visually-hidden">Форма</h2>
+      <p class="page-form__text page-main__header-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
       </p>
 
-      <form class="concourse-form" action="https://echo.htmlacademy.ru">
-        <fieldset class="concourse-form__group">
+      <form class="page-form__form" action="https://echo.htmlacademy.ru">
+        <fieldset class="page-form__group">
           <legend class="visually-hidden">ФИО</legend>
 
-          <ul class="concourse-form__list">
-            <li class="concourse-form__item">
-              <label class="concourse-form__label"
-                ><span class="concourse-form__label-text"> Фамилия: </span>
+          <ul class="page-form__list">
+            <li class="page-form__item">
+              <label class="page-form__label"
+                ><span class="page-form__label-text"> Фамилия: </span>
                 <input
-                  class="concourse-form__input"
+                  class="page-form__input"
                   type="text"
                   name="name"
                   placeholder="Укажите фамилию *"
@@ -59,11 +68,11 @@
                 />
               </label>
             </li>
-            <li class="concourse-form__item">
-              <label class="concourse-form__label"
-                ><span class="concourse-form__label-text"> Имя: </span>
+            <li class="page-form__item">
+              <label class="page-form__label"
+                ><span class="page-form__label-text"> Имя: </span>
                 <input
-                  class="concourse-form__input"
+                  class="page-form__input"
                   type="text"
                   name="name"
                   placeholder="Введите ваше имя *"
@@ -71,11 +80,11 @@
                 />
               </label>
             </li>
-            <li class="concourse-form__item">
-              <label class="concourse-form__label"
-                ><span class="concourse-form__label-text"> Отчество:</span>
+            <li class="page-form__item">
+              <label class="page-form__label"
+                ><span class="page-form__label-text"> Отчество:</span>
                 <input
-                  class="concourse-form__input"
+                  class="page-form__input"
                   type="text"
                   name="name"
                   placeholder="Ну и отчество тоже"
@@ -85,12 +94,12 @@
           </ul>
         </fieldset>
 
-        <fieldset class="concourse-form__group">
-          <legend class="concourse-form__group-title">
+        <fieldset class="page-form__group page-form__group--background">
+          <legend class="page-form__group-title">
             Ваши безбашенные достижения в путешествии
           </legend>
-          <ul class="concourse-form__list">
-            <li class="concourse-form__item">
+          <ul class="page-form__list">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -103,7 +112,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -116,7 +125,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -128,7 +137,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -140,7 +149,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -153,7 +162,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -167,15 +176,15 @@
           </ul>
         </fieldset>
 
-        <fieldset class="concourse-form__group">
+        <fieldset class="page-form__group">
           <legend class="visually-hidden">Контактные данные</legend>
 
-          <ul class="concourse-form__list">
-            <li class="concourse-form__item">
-              <label class="concourse-form__label"
-                ><span class="concourse-form__label-text">Номер телефона</span>
+          <ul class="page-form__list">
+            <li class="page-form__item">
+              <label class="page-form__label"
+                ><span class="page-form__label-text">Номер телефона</span>
                 <input
-                  class="concourse-form__input"
+                  class="page-form__input"
                   type="tel"
                   name="contact"
                   placeholder="Номер, пожалуйста"
@@ -183,11 +192,11 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
-              <label class="concourse-form__label"
-                ><span class="concourse-form__label-text">Адрес почты</span>
+            <li class="page-form__item">
+              <label class="page-form__label"
+                ><span class="page-form__label-text">Адрес почты</span>
                 <input
-                  class="concourse-form__input"
+                  class="page-form__input"
                   type="email"
                   name="contact"
                   placeholder="Введите почту *"
@@ -198,13 +207,13 @@
           </ul>
         </fieldset>
 
-        <fieldset class="concourse-form__group">
-          <legend class="concourse-form__group-title">
+        <fieldset class="page-form__group page-form__group--background">
+          <legend class="page-form__group-title">
             С каким приложением путешествовали?
           </legend>
 
-          <ul class="concourse-form__list">
-            <li class="concourse-form__item">
+          <ul class="page-form__list">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -217,7 +226,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -229,7 +238,7 @@
               </label>
             </li>
 
-            <li class="concourse-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -243,79 +252,77 @@
           </ul>
         </fieldset>
 
-        <fieldset class="concourse-form__group">
-          <legend class="concourse-form__group-title">
+        <fieldset class="page-form__group">
+          <legend class="page-form__group-title">
             Опишите свои эмоции
           </legend>
 
-          <label class="concourse-form__label">
+          <label class="page-form__label">
             <textarea
-              class="concourse-form__input"
+              class="page-form__input page-form__input--text-area"
               name="comment"
               placeholder="Можно прям в красках, не стесняясь в выражениях"
-              style="resize: none"
+              style="resize: none;"
             ></textarea>
           </label>
         </fieldset>
 
-        <button class="concourse-form__button" type="submit">
-          Отправить форму
-        </button>
+        <div class="page-main__side-padding">
+          <button class="page-form__button button button__fill" type="submit">
+            Отправить форму
+          </button>
+        </div>
 
-        <p class="concourse-form__required-info">
+        <p class="page-form__required-info page-main__side-padding">
           <span
             class="
-              concourse-form__required-info concourse-form__required-info--color
+              page-form__required-info page-form__required-info--color
             "
             >*</span
           >
           — обязательные поля
         </p>
       </form>
+      </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page__page-footer page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logotype-blue-tablet.svg" alt="Логотип." />
+        <img src="img/page-footer/logotype-blue-tablet.svg" alt="Логотип." />
       </a>
 
-      <ul class="page-footer__social-list footer-social">
-        <li class="footer-social__item twitter">
-          <a href="#">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="footer-social__item facebook">
-          <a href="#">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="footer-social__item youtube">
-          <a href="#">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
 
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img
-          src="img/html-academy.svg"
-          width="27"
-          height="34"
-          alt="HTML Academy."
-        />
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__copyright-text"> Разработано</span>
+            <span class="visually-hidden">HTML Academy</span>
       </a>
     </footer>
 
-    <div class="modal">
+    <div class="modal page-main__side-padding">
       <div class="modal__failure modal__failure--close">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их
           заполнить
         </p>
-        <button class="modal__button" type="button">Ок</button>
+        <button class="modal__button button button__fill" type="button">Ок</button>
       </div>
 
       <div class="modal__success modal__success--close">
@@ -324,7 +331,7 @@
           Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
           время мы рассмотрим ее и оповестим вас.
         </p>
-        <button class="modal__button" type="button">Закрыть окно</button>
+        <button class="modal__button button button__fill" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
