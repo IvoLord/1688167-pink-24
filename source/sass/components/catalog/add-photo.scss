@@ -4,7 +4,7 @@
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  color:$color-4;
+  color: $color-4;
 }
 
 .add-photo__form {
@@ -31,7 +31,7 @@
 
 .add-photo__label {
   &--crop::before {
-    background: url("../../../img/catalog/add-photo/icon/crop.svg") no-repeat;
+    background: url("../img/catalog/add-photo/icon/crop.svg") no-repeat;
     display: flex;
     content: "";
     width: 44px;
@@ -39,7 +39,7 @@
   }
 
   &--fill::before {
-    background: url("../../../img/catalog/add-photo/icon/fill.svg") no-repeat;
+    background: url("../img/catalog/add-photo/icon/fill.svg") no-repeat;
     display: flex;
     content: "";
     width: 48px;
@@ -47,7 +47,7 @@
   }
 
   &--contrast::before {
-    background: url("../../../img/catalog/add-photo/icon/contrast.svg") no-repeat;
+    background: url("../img/catalog/add-photo/icon/contrast.svg") no-repeat;
     display: flex;
     content: "";
     width: 32px;
@@ -57,7 +57,7 @@
 
 .add-photo__input-mark {
   display: flex;
-  background: url("../../../img/catalog/photo-7-tablet.jpg") no-repeat;
+  background: url("../img/catalog/photo-7-tablet.jpg") no-repeat;
   background-size: cover;
   width: 280px;
   min-height: 374px;

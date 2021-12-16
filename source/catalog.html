@@ -7,10 +7,9 @@
   </head>
   <body class="page__body">
     <header class="page__page-header page-header">
-      <div class="page-header__wrap">
+       <div class="page-header__wrap">
         <nav class="page-header__main-nav main-nav">
-         <div class="main-nav__wrap-nav">
-
+          <div class="main-nav__wrap-nav">
             <a class="main-nav__logo" href="index.html">
               <img
                 class="main-nav__logo-image"
@@ -21,23 +20,22 @@
               />
             </a>
 
-            <button class="main-nav__toggle button button__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            <button class="main-nav__toggle main-nav__toggle--open button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
-          <ul class="main-nav__list visually-hidden">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
+          <ul class="main-nav__list main-nav__list--hide list">
+            <li class="item main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="item main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="item main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="item main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
 
         <div class="page-header__wrap-title">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
+          <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
         </div>
       </div>
     </header>
@@ -49,8 +47,8 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
 
-        <ul class="gallery__list">
-          <li class="gallery__item gallery__item--day-pic">
+        <ul class="list gallery__list">
+          <li class="item gallery__item gallery__item--day-pic">
             <a class="gallery__img-link" href="./img/catalog/panorama-tablet.jpg">
               <img
                 class="gallery__img"
@@ -78,7 +76,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-1-mobile.jpg">
               <img
                 class="gallery__img"
@@ -104,7 +102,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-2-mobile.jpg">
               <img
                 class="gallery__img"
@@ -129,7 +127,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-3-tablet.jpg">
               <img
                 class="gallery__img"
@@ -156,7 +154,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-4-tablet.jpg">
               <img
                 class="gallery__img"
@@ -181,7 +179,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-5-tablet.jpg">
               <img
                 class="gallery__img"
@@ -206,7 +204,7 @@
             </blockquote>
           </li>
 
-          <li class="gallery__item">
+          <li class="item gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-6-tablet.jpg">
               <img
                 class="gallery__img"
@@ -236,7 +234,7 @@
       <section class="page-main__add-photo add-photo">
         <h3 class="add-photo__title">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        <h3/>
+        </h3>
 
         <form class="add-photo__form" action="https://echo.htmlacademy.ru">
           <fieldset class="add-photo__form-group">
@@ -291,8 +289,8 @@
             </div>
           </fieldset>
 
-          <button class="add-photo__button button button__stork" type="submit">Запостить</button>
-          <button class="add-photo__button button button__stork" type="reset">Отменить</button>
+          <button class="add-photo__button button button--stork" type="submit">Запостить</button>
+          <button class="add-photo__button button button--stork" type="reset">Отменить</button>
         </form>
       </section>
     </main>
@@ -302,18 +300,18 @@
         <img src="img/page-footer/logotype-blue-tablet.svg" alt="Логотип." />
       </a>
 
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
+      <ul class="list page-footer__social-list">
+        <li class="item page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
+        <li class="item page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
+        <li class="item page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>

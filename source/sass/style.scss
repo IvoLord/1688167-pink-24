@@ -1,6 +1,7 @@
 // global
 @import "./global/global.scss";
 @import "./global/colors.scss";
+@import "./global/visualy-hidden.scss";
 // page
 @import "./components/page.scss";
 @import "./components/page-header.scss";
@@ -19,7 +20,6 @@
 // form
 @import "./components/form/page-form.scss";
 // other
-@import "./components/visualy-hidden.scss";
 @import "./components/button.scss";
 @import "./components/page-main.scss";
 @import "./components/main-nav.scss";

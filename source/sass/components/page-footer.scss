@@ -27,28 +27,16 @@
   width: 54px;
   height: 54px;
 
-  &--twitter::before {
-    position: absolute;
-    content: "";
-    background: url("../../img/page-footer/twitter.svg") no-repeat;
-    width: 18px;
-    height: 14px;
+  &--twitter {
+    background: url("../img/page-footer/twitter.svg") no-repeat center;
   }
 
-  &--facebook::before {
-    position: absolute;
-    content: "";
-    background: url("../../img/page-footer/facebook.svg") no-repeat;
-    width: 9px;
-    height: 18px;
+  &--facebook {
+    background: url("../img/page-footer/facebook.svg") no-repeat center;
   }
 
-  &--youtube::before {
-    position: absolute;
-    content: "";
-    background: url("../../img/page-footer/youtube.svg") no-repeat;
-    width: 15px;
-    height: 13px;
+  &--youtube {
+    background: url("../img/page-footer/youtube.svg") no-repeat center;
   }
 }
 
@@ -58,13 +46,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color:$color-4;
+  color: $color-4;
   padding: 40px 20px;
 
   &::after {
     content: "";
     margin-left: 15px;
-    background: url("../../img/page-footer/html-academy.svg") no-repeat;
+    background: url("../img/page-footer/html-academy.svg") no-repeat;
     width: 27px;
     height: 34px;
   }

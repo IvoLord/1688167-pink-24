@@ -5,6 +5,7 @@
 }
 
 .main-nav__wrap-nav {
+  z-index: 1;
   height: 63px;
   position: inherit;
   padding: 0 20px;
@@ -20,30 +21,44 @@
 
 .main-nav__toggle {
   &--open {
-    background: url("../../img/page-header/icon/open-menu-btn.svg") no-repeat;
+    background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat;
     width: 50px;
     height: 24px;
   }
 
   &--close {
-    background: url("../../img/page-header/icon/close-menu-btn.svg") no-repeat;
+    background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat;
     width: 23px;
     height: 23px;
   }
 }
 
-.main-nav__list {
-  width: 100%;
-  position: absolute;
-  top: 0;
+//пока нет js пусть будет этот кусок кода
 
-  &::before {
-    content: "";
-    display: flex;
-    height: 63px;
-    width: 100%;
-    background: $color-4;
-    box-shadow: 0 1px 0 $color-3, inset 0 1px 0 $color-2-15;
+.main-nav__list {
+  z-index: 0;
+  width: 100%;
+  position: inherit;
+
+  // класс для открытия меню с Js
+  &--open {
+    position: absolute;
+    top: 0;
+
+    &::before {
+      content: "";
+      display: flex;
+      height: 63px;
+      width: 100%;
+      background: $color-4;
+      border-top: 1px solid $color-2-15;
+      border-bottom: 1px solid $color-3;
+    }
+  }
+
+  // класс для скрытия меню с js
+  &--hide {
+    display: none;
   }
 }
 
@@ -52,13 +67,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 63px;
+  min-height: 63px;
   width: 100%;
   box-sizing: border-box;
   font-size: $font-size-3;
   font-weight: $font-weight-3;
   line-height: $line-height-2;
   background: $color-4;
-  box-shadow: 0 1px 0 $color-3, inset 0 1px 0 $color-2-15;
+  border-top: 1px solid $color-2-15;
+  border-bottom: 1px solid $color-3;
 }
 
