@@ -1,0 +1,29 @@
+.button {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+
+.button--stork {
+  border: 3px solid $color-2;
+  border-radius: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.button--fill {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-2;
+  background: $color-5;
+  border: 2px solid $color-5;
+  border-radius: 1px;
+}

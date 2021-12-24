@@ -1,0 +1,19 @@
+.page {
+  // ! флекс для того что бы футтер прижимался книзу, но нужно еще проверить правино ли сделал
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 320px;
+}
+
+.page__body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: $font-weight-2;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+}
+
+.page__page-main {
+  flex-grow: 1;
+}

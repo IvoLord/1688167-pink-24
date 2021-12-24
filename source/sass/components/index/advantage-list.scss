@@ -1,0 +1,32 @@
+.advantage-list {
+  margin: 0;
+  padding: 70px 20px 0;
+  text-align: center;
+
+  &::after {
+    width: 157px;
+    height: 320px;
+    margin: 0 auto;
+    content: "";
+    display: flex;
+    background: url("../img/information/phone-smile.jpg") no-repeat;
+    background-position: 0% 40px;
+  }
+}
+
+.advantage-list__item {
+  list-style: none;
+}
+
+.advantage-list__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.advantage-list__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-4;
+}
+
