@@ -6,10 +6,15 @@
 }
 
 .page-footer__social-list {
+  margin: 0;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page-footer__social-list {
+  list-style: none;
 }
 
 .page-footer__social-item:not(:last-child) {

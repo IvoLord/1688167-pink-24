@@ -1,5 +1,11 @@
 .review__list {
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.review__item {
+  list-style: none;
 }
 
 .review__review__block-name {
@@ -15,8 +21,14 @@
 .review__pagination-list {
   width: 56px;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.review__pagination-item {
+  list-style: none;
 }
