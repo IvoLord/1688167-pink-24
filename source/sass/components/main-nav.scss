@@ -1,14 +1,17 @@
 .main-nav {
   position: relative;
   width: 100%;
-  background-color: $color-3-30;
+  background-color: #00000030;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .main-nav__wrap-nav {
-  z-index: 1;
+  //  может интекс и не нужен протестировать когда будет больше всего
+  // z-index: 1;
+
   height: 63px;
   position: inherit;
-  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -80,3 +83,38 @@
   border-bottom: 1px solid $color-3;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__wrap-nav {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    padding: 0 130px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    margin-left: 173px;
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .main-nav__item {
+    width: auto;
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}

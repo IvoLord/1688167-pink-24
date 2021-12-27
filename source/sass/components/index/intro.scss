@@ -1,5 +1,9 @@
+.intro {
+  margin-top: 328px;
+}
+
 .intro__social-wraper {
-  padding: 22px 20px 38px;
+  padding: 22px 0 38px;
 }
 
 .intro__button-download {
@@ -16,4 +20,10 @@
   line-height: $line-height-1;
   font-weight: $font-weight-1;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    margin-top: 0;
+  }
 }
