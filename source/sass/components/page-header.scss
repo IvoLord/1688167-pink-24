@@ -20,6 +20,9 @@
     max-height: 462px;
   }
 
+  &--index {
+    min-height: 462px;
+  }
 
   &--index::before {
     content: "";
@@ -57,6 +60,9 @@
   .page-header__wrap {
 
     // дописать бифор для всех остальних страниц
+    &--index {
+      min-height: 729px;
+    }
 
     &--index::before {
       min-height: 729px;
@@ -80,6 +86,10 @@
   .page-header__wrap {
 
     // дописать бифор для всех остальних страниц
+
+    &--index {
+      min-height: 853px;
+    }
 
     &--index::before {
       min-height: 853px;
