@@ -32,3 +32,66 @@
 .review__pagination-item {
   list-style: none;
 }
+
+@media (max-width: $mobile-width-only) {
+  .review__block-bio {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__block-cite {
+    order: 1;
+  }
+
+  .review__block-bio {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    position: relative;
+    padding: 0 130px;
+  }
+
+  .review__list {
+    padding: 0 126px;
+  }
+
+  .review__block-bio {
+    display: block;
+  }
+
+  .review__pagination-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 0 130px;
+
+    &--back {
+      background: url("../img/index/review/left arrow.svg") no-repeat;
+      min-width: 22px;
+      height: 41px;
+    }
+
+    &--next {
+      background: url("../img/index/review/left arrow.svg") no-repeat;
+      min-width: 22px;
+      height: 41px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .review__pagination-list {
+    display: none;
+  }
+}
