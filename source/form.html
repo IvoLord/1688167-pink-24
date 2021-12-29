@@ -6,51 +6,44 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="page-header">
-        <div class="page-header__wrap">
+       <header class="page__page-header page-header">
+      <div class="page-header__wrap">
         <nav class="page-header__main-nav main-nav">
           <div class="main-nav__wrap-nav">
             <a class="main-nav__logo" href="index.html">
-              <img
-                class="main-nav__logo-image"
-                src="./img/header-logo.svg"
-                alt="Pink."
-                width="74"
-                height="23"
-              />
+              <span class="visually-hidden">Pink</span>
             </a>
 
-              <span class="visually-hidden">Открыть меню</span>
             <button class="main-nav__toggle main-nav__toggle--open button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
-          <ul class="main-nav__list main-nav__list--hide list">
-            <li class="item main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="item main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="item main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="item main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <ul class="main-nav__list main-nav__list--hide">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
 
-        <div class="page-header__wrap-title">
-          <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+        <div class="page-header__wrap-header-content ">
+          <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
     </header>
 
-    <main class="page__page-main page-main">
+    <main class="page__page-main">
       <section class="page__page-form page-form">
 
       <h2 class="visually-hidden">Форма</h2>
-      <p class="page-form__text page-main__header-text">
+      <p class="page-form__head-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
       </p>
 
       <form class="page-form__form" action="https://echo.htmlacademy.ru">
-        <fieldset class="page-form__group">
+        <fieldset class="page-form__group page-form__group--name">
           <legend class="visually-hidden">ФИО</legend>
 
           <ul class="list page-form__list">
@@ -92,7 +85,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__group page-form__group--background">
+        <fieldset class="page-form__group page-form__group--background page-form__group--achivement">
           <legend class="page-form__group-title">
             Ваши безбашенные достижения в путешествии
           </legend>
@@ -174,12 +167,12 @@
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__group">
-          <legend class="visually-hidden">Контактные данные</legend>
+        <fieldset class="page-form__group page-form__group--contacts">
+          <legend class="page-form__group-title">Контактная информация</legend>
 
           <ul class="list page-form__list">
             <li class="item page-form__item">
-              <label class="page-form__label"
+              <label class="page-form__label page-form__label--contacts"
                 ><span class="page-form__label-text">Номер телефона</span>
                 <input
                   class="page-form__input"
@@ -191,7 +184,7 @@
             </li>
 
             <li class="item page-form__item">
-              <label class="page-form__label"
+              <label class="page-form__label page-form__label--contacts"
                 ><span class="page-form__label-text">Адрес почты</span>
                 <input
                   class="page-form__input"
@@ -205,7 +198,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__group page-form__group--background">
+        <fieldset class="page-form__group page-form__group--background page-form__group--app">
           <legend class="page-form__group-title">
             С каким приложением путешествовали?
           </legend>
@@ -250,7 +243,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="page-form__group">
+        <fieldset class="page-form__group page-form__group--comments">
           <legend class="page-form__group-title">
             Опишите свои эмоции
           </legend>
@@ -265,21 +258,17 @@
           </label>
         </fieldset>
 
-        <div class="page-main__side-padding">
+        <div class="page-main__wrap-button">
           <button class="page-form__button button button--fill" type="submit">
             Отправить форму
           </button>
+
+          <p class="page-form__required-info page-main__side-padding">
+          <span class="page-form__required-info page-form__required-info--color">*</span>— обязательные поля
+        </p>
         </div>
 
-        <p class="page-form__required-info page-main__side-padding">
-          <span
-            class="
-              page-form__required-info page-form__required-info--color
-            "
-            >*</span
-          >
-          — обязательные поля
-        </p>
+
       </form>
       </section>
     </main>

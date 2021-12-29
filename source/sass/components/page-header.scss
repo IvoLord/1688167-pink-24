@@ -51,15 +51,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrap-header-content {
-    width: 300px;
-    position: relative;
-    margin-top: 102px;
-  }
-
   .page-header__wrap {
+    min-height: 440px;
 
-    // дописать бифор для всех остальних страниц
+    &::before {
+      min-height: 440px;
+    }
+
     &--index {
       min-height: 729px;
     }
@@ -68,6 +66,14 @@
       min-height: 729px;
       background-size: 545px, cover;
       background-position: bottom right, top;
+    }
+  }
+
+  .page-header__wrap-header-content {
+    &--index {
+      width: 300px;
+      position: relative;
+      margin-top: 102px;
     }
   }
 
@@ -84,8 +90,9 @@
   }
 
   .page-header__wrap {
-
-    // дописать бифор для всех остальних страниц
+    &::before {
+      min-height: 394px;
+    }
 
     &--index {
       min-height: 853px;
@@ -99,7 +106,11 @@
   }
 
   .page-header__wrap-header-content {
-    position: relative;
     padding: 0 130px;
+
+    &--index {
+      position: relative;
+      padding: 0 130px;
+    }
   }
 }
