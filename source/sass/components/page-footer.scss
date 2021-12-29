@@ -6,15 +6,12 @@
 }
 
 .page-footer__social-list {
+  list-style: none;
   margin: 0;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.page-footer__social-list {
-  list-style: none;
 }
 
 .page-footer__social-item:not(:last-child) {
@@ -60,5 +57,20 @@
     background: url("../img/page-footer/html-academy.svg") no-repeat;
     width: 27px;
     height: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 130px;
   }
 }

@@ -7,7 +7,7 @@
 }
 
 .main-nav__wrap-nav {
-  //  может интекс и не нужен протестировать когда будет больше всего
+  //  может индекс и не нужен протестировать когда будет больше всего
   // z-index: 1;
 
   height: 63px;
@@ -16,10 +16,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
-
-.main-nav__logo {
-  display: flex;
 }
 
 .main-nav__toggle {
@@ -83,13 +79,36 @@
   border-bottom: 1px solid $color-3;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav__logo {
+    display: flex;
+    background: url("../img/page-header/main-nav/pink.svg") no-repeat;
+    min-width: 74px;
+    height: 23px;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .main-nav__logo {
+    display: flex;
+    background: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
+    min-width: 145px;
+    height: 40px;
+  }
+
   .main-nav__wrap-nav {
     min-height: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__logo {
+    display: flex;
+    background: url("../img/page-header/main-nav/logotype-white-desktop.svg") no-repeat;
+    min-width: 147px;
+    height: 40px;
+  }
+
   .main-nav {
     display: flex;
     padding: 0 130px;
