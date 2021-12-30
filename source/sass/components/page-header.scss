@@ -90,6 +90,8 @@
   }
 
   .page-header__wrap {
+    min-height: 394px;
+
     &::before {
       min-height: 394px;
     }
@@ -110,7 +112,7 @@
 
     &--index {
       position: relative;
-      padding: 0 130px;
+      // padding: 0 130px;
     }
   }
 }

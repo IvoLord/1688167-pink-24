@@ -35,8 +35,8 @@
 
     <main class="page__page-main">
       <section class="page__page-form page-form">
-
       <h2 class="visually-hidden">Форма</h2>
+
       <p class="page-form__head-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
@@ -89,8 +89,8 @@
           <legend class="page-form__group-title">
             Ваши безбашенные достижения в путешествии
           </legend>
-          <ul class="list page-form__list">
-            <li class="item page-form__item">
+          <ul class="page-form__list page-form__list--achivement">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -103,7 +103,7 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -116,7 +116,44 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Видел Чака Норриса</span>
+              </label>
+            </li>
+            <li class="page-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Сделал селфи с акулой</span>
+              </label>
+            </li>
+
+            <li class="page-form__item">
+              <label class="control">
+                <input
+                  class="control__input visually-hidden"
+                  type="checkbox"
+                  name="achivement"
+                  checked
+                />
+                <span class="control__mark"></span>
+                <span class="control__label">Обгорел на пляже</span>
+              </label>
+            </li>
+
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -128,7 +165,7 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -140,7 +177,7 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -153,7 +190,7 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
               <label class="control">
                 <input
                   class="control__input visually-hidden"
@@ -170,7 +207,7 @@
         <fieldset class="page-form__group page-form__group--contacts">
           <legend class="page-form__group-title">Контактная информация</legend>
 
-          <ul class="list page-form__list">
+          <ul class="page-form__list page-form__list--contacts">
             <li class="item page-form__item">
               <label class="page-form__label page-form__label--contacts"
                 ><span class="page-form__label-text">Номер телефона</span>
@@ -183,7 +220,7 @@
               </label>
             </li>
 
-            <li class="item page-form__item">
+            <li class="page-form__item">
               <label class="page-form__label page-form__label--contacts"
                 ><span class="page-form__label-text">Адрес почты</span>
                 <input
@@ -258,7 +295,7 @@
           </label>
         </fieldset>
 
-        <div class="page-main__wrap-button">
+        <div class="page-form__wrap-button">
           <button class="page-form__button button button--fill" type="submit">
             Отправить форму
           </button>
@@ -267,7 +304,6 @@
           <span class="page-form__required-info page-form__required-info--color">*</span>— обязательные поля
         </p>
         </div>
-
 
       </form>
       </section>

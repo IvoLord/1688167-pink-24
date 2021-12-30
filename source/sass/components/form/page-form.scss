@@ -13,6 +13,10 @@
   margin: 0;
   padding: 0 20px;
 
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
   &--background {
     background: #f2f2f2;
   }
@@ -74,7 +78,7 @@
   }
 }
 
-.page-main__wrap-button {
+.page-form__wrap-button {
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -91,11 +95,6 @@
   .page-form__form {
     display: flex;
     flex-direction: column;
-  }
-
-  .page-form__label {
-    display: flex;
-    align-items: center;
   }
 
   .page-form__group {
@@ -130,23 +129,22 @@
     }
   }
 
-  .page-form__label--contacts{
+  .page-form__label {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    align-items: center;
 
-  .page-form__label--contacts .page-form__label-text{
-    order: 2;
-  }
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-  .page-form__item {
-    &:not(:last-child) {
-      margin-bottom: 40px;
+    &--contacts .page-form__label-text {
+      order: 2;
     }
   }
 
-  .page-main__wrap-button {
+  .page-form__wrap-button {
     justify-content: space-between;
   }
 
@@ -155,5 +153,55 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $desktop-width) {
+  .page-form__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 130px;
+    column-gap: 74px;
+  }
+
+  .page-form__group {
+    padding: 0;
+
+    &:not(:first-child) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--contacts {
+      grid-column: 1/-1;
+    }
+
+    &--achivement {
+      grid-column: 1/-1;
+    }
+
+    &--comments {
+      grid-column: 1/-1;
+    }
+  }
+
+  .page-form__list {
+    &--achivement {
+      columns: 3;
+      // width: 100%;
+      // display: grid;
+      // column-gap: 74px;
+      // grid-template-rows: repeat(3, auto);
+      // grid-auto-flow: column;
+    }
+
+    &--contacts {
+      columns: 2;
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
+      column-gap: 74px;
+    }
+  }
+
+  .page-form__wrap-button {
+    grid-column: 1/-1;
+    padding: 0;
+  }
+}
