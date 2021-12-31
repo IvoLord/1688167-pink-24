@@ -76,6 +76,10 @@
   &--color {
     color: #d22856;
   }
+
+  &--desktop-visible {
+    display: none;
+  }
 }
 
 .page-form__wrap-button {
@@ -185,17 +189,10 @@
   .page-form__list {
     &--achivement {
       columns: 3;
-      // width: 100%;
-      // display: grid;
-      // column-gap: 74px;
-      // grid-template-rows: repeat(3, auto);
-      // grid-auto-flow: column;
     }
 
     &--contacts {
       columns: 2;
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
       column-gap: 74px;
     }
   }
@@ -203,5 +200,9 @@
   .page-form__wrap-button {
     grid-column: 1/-1;
     padding: 0;
+  }
+
+  .page-form__required-info--desktop-visible {
+    display: inline;
   }
 }

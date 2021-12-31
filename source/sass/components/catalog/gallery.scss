@@ -6,17 +6,20 @@
   color: $color-4;
 }
 
+.gallery__day-pic .gallery__tex-content {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
 
 .gallery__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .gallery__item {
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
-  padding: 0 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -36,6 +39,7 @@
 }
 
 .gallery__img {
+  width: 100%;
   object-fit: cover;
 }
 
@@ -83,4 +87,32 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery__item {
+    padding: 0;
+
+    &--day-pic {
+      grid-column: 1/-1;
+    }
+  }
+
+  .gallery__img {
+    height: 300px;
+
+    &--day-pic {
+      height: 509px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
 }

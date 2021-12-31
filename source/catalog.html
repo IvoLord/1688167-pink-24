@@ -7,51 +7,43 @@
   </head>
   <body class="page__body">
     <header class="page__page-header page-header">
-       <div class="page-header__wrap">
+      <div class="page-header__wrap">
         <nav class="page-header__main-nav main-nav">
           <div class="main-nav__wrap-nav">
             <a class="main-nav__logo" href="index.html">
-              <img
-                class="main-nav__logo-image"
-                src="./img/header-logo.svg"
-                alt="Pink."
-                width="74"
-                height="23"
-              />
+              <span class="visually-hidden">Pink</span>
             </a>
 
-              <span class="visually-hidden">Открыть меню</span>
             <button class="main-nav__toggle main-nav__toggle--open button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
           <ul class="main-nav__list main-nav__list--hide">
-            <li class="item main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="item main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="item main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="item main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
 
-        <div class="page-header__wrap-title">
-          <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+        <div class="page-header__wrap-header-content ">
+          <h1 class="page-header__title">Фотографии пользователей</h1>
         </div>
       </div>
     </header>
 
-    <main class="page__page-main page-main">
-      <section class="page-main__gallery gallery">
+    <main class="page__page-main">
+      <section class="page__gallery gallery">
         <h2 class="visually-hidden">Галерея</h2>
         <p class="gallery__text">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
 
-        <ul class="gallery__list">
-          <li class="item gallery__item gallery__item--day-pic">
+        <div class="gallery__day-pic">
             <a class="gallery__img-link" href="./img/catalog/panorama-tablet.jpg">
               <img
-                class="gallery__img"
+                class="gallery__img gallery__img--day-pic"
                 src="./img/catalog/panorama-tablet.jpg"
 
                 alt="Фото дня."
@@ -74,9 +66,10 @@
                 Нравится: <span class="gallery__like-count">215</span>
               </button>
             </blockquote>
-          </li>
+        </div>
 
-          <li class="item gallery__item">
+        <ul class="gallery__list">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-1-mobile.jpg">
               <img
                 class="gallery__img"
@@ -102,15 +95,14 @@
             </blockquote>
           </li>
 
-          <li class="item gallery__item">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-2-mobile.jpg">
               <img
                 class="gallery__img"
                 src="./img/catalog/photo-2-mobile.jpg"
                 alt="фото из галереи."
                 width="280"
-                height="180"
-              />
+                height="180"/>
             </a>
 
             <blockquote class="gallery__tex-content">
@@ -127,7 +119,7 @@
             </blockquote>
           </li>
 
-          <li class="item gallery__item">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-3-tablet.jpg">
               <img
                 class="gallery__img"
@@ -154,7 +146,7 @@
             </blockquote>
           </li>
 
-          <li class="item gallery__item">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-4-tablet.jpg">
               <img
                 class="gallery__img"
@@ -179,7 +171,7 @@
             </blockquote>
           </li>
 
-          <li class="item gallery__item">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-5-tablet.jpg">
               <img
                 class="gallery__img"
@@ -204,7 +196,7 @@
             </blockquote>
           </li>
 
-          <li class="item gallery__item">
+          <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-6-tablet.jpg">
               <img
                 class="gallery__img"
@@ -240,7 +232,7 @@
           <fieldset class="add-photo__form-group">
             <legend class="visually-hidden">Добавление фото</legend>
 
-            <label class="add-photo__label">
+            <label class="add-photo__label-photo">
               <input
                 class="add-photo__input-file visually-hidden"
                 type="file"
@@ -248,70 +240,81 @@
                 accept="image/png, image/jpeg"
               />
               <span class="add-photo__input-mark"></span>
-              <span class="add-photo__input-label visually-hidden">Добавить фото</span>
+              <span class="add-photo__input-label-photo visually-hidden">Добавить фото</span>
             </label>
 
-            <div class="add-photo__labels">
-              <label class="add-photo__label add-photo__label--crop" for="crop">
-                <span class="visually-hidden"> Размер </span>
-              </label>
+            <div class="add-photo__wrap-inputs">
+              <div class="add-photo__labels">
+                <label class="add-photo__label add-photo__label--crop" for="crop">
+                  <span class="visually-hidden"> Размер </span>
+                </label>
 
-              <label class="add-photo__label add-photo__label--fill" for="color">
-                <span class="visually-hidden"> Цвет </span>
-              </label>
+                <label class="add-photo__label add-photo__label--fill" for="color">
+                  <span class="visually-hidden"> Цвет </span>
+                </label>
 
-              <label class="add-photo__label add-photo__label--contrast" for="brightness">
-                <span class="visually-hidden"> Яркость </span>
-              </label>
-            </div>
+                <label class="add-photo__label add-photo__label--contrast" for="brightness">
+                  <span class="visually-hidden"> Яркость </span>
+                </label>
+              </div>
 
-            <div class="add-photo__inputs">
-              <input
-                class="add-photo__input-range"
-                type="range"
-                name="crop"
-                id="crop"
-              />
+              <div class="add-photo__inputs">
+                <div class="add-photo__wrap-range add-photo__wrap-range--crop">
+                  <input
+                    class="add-photo__input-range add-photo__input-range--crop"
+                    type="range"
+                    name="crop"
+                    id="crop"
+                  />
+                </div>
 
-              <input
-                class="add-photo__input-range visually-hidden"
-                type="range"
-                name="color"
-                id="color"
-              />
+                <div class="add-photo__wrap-range add-photo__wrap-range--fill">
+                    <input
+                    class="add-photo__input-range add-photo__input-range--fill"
+                    type="range"
+                    name="color"
+                    id="color"
+                  />
+                </div>
 
-              <input
-                class="add-photo__input-range visually-hidden"
-                type="range"
-                name="brightness"
-                id="brightness"
-              />
-            </div>
+                <div class="add-photo__wrap-range add-photo__wrap-range--contrast">
+                  <input
+                    class="add-photo__input-range add-photo__input-range--contrast"
+                    type="range"
+                    name="brightness"
+                    id="brightness"
+                  />
+                </div>
+
+                <div class="add-photo__wrap-buttons">
+                  <button class="add-photo__button button button--stork" type="submit">Запостить</button>
+                  <button class="add-photo__button button button--stork" type="reset">Отменить</button>
+                </div>
+              </div>
           </fieldset>
 
-          <button class="add-photo__button button button--stork" type="submit">Запостить</button>
-          <button class="add-photo__button button button--stork" type="reset">Отменить</button>
+
         </form>
       </section>
     </main>
 
     <footer class="page__page-footer page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/page-footer/logotype-blue-tablet.svg" alt="Логотип." />
+         <span class="visually-hidden">Pink</span>
       </a>
 
       <ul class="page-footer__social-list">
-        <li class="item page-footer__social-item">
+        <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="item page-footer__social-item">
+        <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="item page-footer__social-item">
+        <li class="page-footer__social-item">
           <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
