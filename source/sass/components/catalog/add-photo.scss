@@ -108,11 +108,16 @@
     display: none;
   }
 
+  .add-photo__input-mark {
+    min-height: 400px;
+  }
+
   .add-photo__form-group {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
+
 
   .add-photo__inputs {
     padding: 0 20px;
@@ -152,5 +157,85 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
+  .add-photo__form {
+    margin: 0 130px;
+  }
+
+  .add-photo__form-group {
+    padding: 0 80px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .add-photo__label-photo {
+    min-width: 300px;
+    flex-grow: 1;
+  }
+
+  .add-photo__wrap-range {
+    display: flex;
+    justify-content: space-between;
+    min-height: 74px;
+
+    &--crop::before {
+      content: "";
+      background: url("../img/catalog/add-photo/icon/crop.svg") no-repeat center;
+      background-size: 44px 44px;
+      min-width: 50px;
+      height: auto;
+      margin-right: 25px;
+    }
+
+    &--fill::before {
+      content: "";
+      background: url("../img/catalog/add-photo/icon/fill.svg") no-repeat center;
+      background-size: 48px 43px;
+      min-width: 50px;
+      height: auto;
+      margin-right: 25px;
+    }
+
+    &--contrast::before {
+      content: "";
+      background: url("../img/catalog/add-photo/icon/contrast.svg") no-repeat center;
+      background-size: 32px 32px;
+      min-width: 50px;
+      height: auto;
+      margin-right: 25px;
+    }
+  }
+
+  .add-photo__wrap-inputs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-photo__inputs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .add-photo__wrap-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+
+    justify-content: space-between;
+  }
+
+  .add-photo__button {
+    margin: 0;
+    width: auto;
+    min-width: 185px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
