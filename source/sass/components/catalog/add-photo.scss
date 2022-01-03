@@ -63,8 +63,9 @@
   display: flex;
   background: url("../img/catalog/photo-7-tablet.jpg") no-repeat;
   background-size: cover;
+  aspect-ratio: 280/374;
   width: 100%;
-  min-height: 374px;
+  height: 100%;
 }
 
 .add-photo__inputs {
