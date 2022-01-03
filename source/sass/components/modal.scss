@@ -1,5 +1,9 @@
 .modal {
-  padding: 0 20px;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translate(0, -50%);
 }
 
 .modal__title {
@@ -18,15 +22,22 @@
 
 .modal__button {
   width: 100%;
+  margin: 0 auto;
   min-height: 59px;
+}
+
+.modal__wrap-text {
+  padding: 45px 20px 50px;
+}
+
+.modal__content {
+  background: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
 }
 
 .modal__success {
   display: block;
-  background: #ffffff;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  border-radius: 1px;
-  padding: 45px 20px 50px;
 
   &--close {
     display: none;
@@ -35,12 +46,57 @@
 
 .modal__failure {
   display: block;
-  background: #ffffff;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  border-radius: 1px;
-  padding: 45px 20px 50px;
 
   &--close {
     display: none;
+  }
+}
+
+.modal__wrap-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 163px;
+  background-color: #f2f2f2;
+}
+
+@media (max-width: $mobile-width-only) {
+  .modal__wrap-text {
+    padding: 45px 20px 50px;
+  }
+
+  .modal__button {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  .modal__button {
+    width: 296px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    padding: 210px;
+    box-sizing: border-box;
+  }
+
+
+  .modal__wrap-button {
+    // display: flex;
+    // align-items: center;
+    // width: 100%;
+    min-height: 163px;
+    background-color: #f2f2f2;
+  }
+
+  .modal__button {
+    width: 296px;
   }
 }
