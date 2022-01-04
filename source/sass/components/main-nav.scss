@@ -3,13 +3,14 @@
   width: 100%;
   background-color: #00000030;
   box-sizing: border-box;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 .main-nav__wrap-nav {
   //  может индекс и не нужен протестировать когда будет больше всего
   // z-index: 1;
 
+  padding: 0 20px;
   height: 63px;
   position: inherit;
   display: flex;
@@ -64,19 +65,24 @@
 }
 
 .main-nav__item {
-  padding: 5px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 63px;
-  width: 100%;
-  box-sizing: border-box;
+
   font-size: $font-size-3;
   font-weight: $font-weight-3;
   line-height: $line-height-2;
   background: $color-4;
   border-top: 1px solid $color-2-15;
   border-bottom: 1px solid $color-3;
+}
+
+.main-nav__button-link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  // outline: 1px solid red;
+  width: 100%;
+  min-height: 63px;
+
 }
 
 @media (max-width: $mobile-width-only) {
@@ -129,6 +135,8 @@
   }
 
   .main-nav__item {
+    padding: 5px 20px;
+    display: flex;
     width: auto;
     background: none;
     border: none;
