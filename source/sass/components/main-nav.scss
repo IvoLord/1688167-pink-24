@@ -76,13 +76,10 @@
 
 .main-nav__button-link {
   display: flex;
-
   align-items: center;
   justify-content: center;
-  // outline: 1px solid red;
   width: 100%;
   min-height: 63px;
-
 }
 
 @media (max-width: $mobile-width-only) {
