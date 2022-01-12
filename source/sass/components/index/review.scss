@@ -57,7 +57,8 @@
 @media (min-width: $desktop-width) {
   .review {
     position: relative;
-    padding: 0 130px;
+    padding: 0;
+    margin: 0;
   }
 
   .review__list {
@@ -68,6 +69,17 @@
     display: block;
   }
 
+  .review__block-comment{
+    &::before {
+      content: "";
+      // outline: 1px solid red;
+      display: flex;
+      background: url("../img/index/review/quotes.svg") no-repeat center;
+      min-width: 79px;
+      height: 63px;
+    }
+  }
+
   .review__pagination-arrow {
     position: absolute;
     display: flex;
@@ -75,7 +87,6 @@
     top: 50px;
     left: 0;
     right: 0;
-    padding: 0 130px;
 
     &--back {
       background: url("../img/index/review/left arrow.svg") no-repeat;

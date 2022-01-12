@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -9,62 +10,66 @@
     <header class="page__page-header page-header">
       <div class="page-header__wrap page-header__wrap--index">
         <nav class="page-header__main-nav main-nav">
-          <div class="main-nav__wrap-nav">
-            <a class="main-nav__logo" href="index.html">
-              <span class="visually-hidden">Pink</span>
-            </a>
-
-            <button class="main-nav__toggle main-nav__toggle--open button" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
-
-          <!-- класс для отключения main-nav__list--hide -->
-          <ul class="main-nav__list main-nav__list--hide">
-            <li class="main-nav__item"><a class="main-nav__button-link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
-        </nav>
-
-        <div class="page-header__wrap-header-content page-header__wrap-header-content--index">
-          <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
-
-          <section class="page-header__intro intro">
-            <h2 class="visually-hidden">Интро</h2>
-
-            <div class="intro__social-wraper">
-              <a
-                class="intro__button-download button button--stork"
-                href="https://www.apple.com/app-store/"
-              >
-                Скачать приложение
+          <div class="main-nav__container container">
+            <div class="main-nav__wrap-nav">
+              <a class="main-nav__logo" href="index.html">
+                <span class="visually-hidden">Pink</span>
               </a>
 
-              <ul class="intro__social-list social-list">
-                <li class="social-list__item">
-                  <a class="social-list__item-apple" href="https://www.apple.com/app-store/">
-                    <span class="visually-hidden">AppStore</span>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__item-google" href="https://play.google.com/store/apps">
-                    <span class="visually-hidden">Google Play</span>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__item-microsoft" href="https://www.microsoft.com/pl-pl/store/apps">
-                    <span class="visually-hidden">Microsoft Store</span>
-                  </a>
-                </li>
-              </ul>
-
-              <p class="intro__text">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </p>
+              <button class="main-nav__toggle main-nav__toggle--open button" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             </div>
-          </section>
+
+            <!-- класс для отключения main-nav__list--close -->
+            <ul class="main-nav__list main-nav__list--close">
+              <li class="main-nav__item"><a class="main-nav__button-link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="https://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="page-header__wrap-header-content page-header__wrap-header-content--index">
+            <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+
+            <section class="page-header__intro intro">
+              <h2 class="visually-hidden">Интро</h2>
+
+              <div class="intro__social-wraper">
+                <a
+                  class="intro__button-download button button--stork"
+                  href="https://www.apple.com/app-store/"
+                >
+                  Скачать приложение
+                </a>
+
+                <ul class="intro__social-list social-list">
+                  <li class="social-list__item">
+                    <a class="social-list__item-apple" href="https://www.apple.com/app-store/">
+                      <span class="visually-hidden">AppStore</span>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__item-google" href="https://play.google.com/store/apps">
+                      <span class="visually-hidden">Google Play</span>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__item-microsoft" href="https://www.microsoft.com/pl-pl/store/apps">
+                      <span class="visually-hidden">Microsoft Store</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <p class="intro__text">
+                  Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
 
@@ -75,34 +80,38 @@
         <h2 class="visually-hidden">Информация</h2>
 
         <div class="information__text-wrap">
-          <p class="information__text">Устали от серости мегаполиса?</p>
-          <p class="information__text">Нам есть, что вам <br> предложить!</p>
+
+            <p class="information__text">Устали от серости мегаполиса?</p>
+            <p class="information__text">Нам есть, что вам <br> предложить!</p>
         </div>
 
+
         <div class="information__advantage-wraper">
-          <ul class="information__advantage-list advantage-list">
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Поднимает настроение</h3>
-              <p class="advantage-list__text">
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Меняет мир вокруг</h3>
-              <p class="advantage-list__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Заводит новых друзей</h3>
-              <p class="advantage-list__text">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
-            </li>
-          </ul>
+          <div class="container">
+
+            <ul class="information__advantage-list advantage-list">
+              <li class="advantage-list__item">
+                <h3 class="advantage-list__title">Поднимает настроение</h3>
+                <p class="advantage-list__text">
+                  Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="advantage-list__item">
+                <h3 class="advantage-list__title">Меняет мир вокруг</h3>
+                <p class="advantage-list__text">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                  чтобы усилить эффект
+                </p>
+              </li>
+              <li class="advantage-list__item">
+                <h3 class="advantage-list__title">Заводит новых друзей</h3>
+                <p class="advantage-list__text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                  заводите новых
+                </p>
+              </li>
+            </ul>
 
           <div class="information__effect">
             <div class="information__effect-wrap">
@@ -113,10 +122,12 @@
                 <a class="information__effect-link" href="#">Узнать больше об исследовании</a>
               </div>
           </div>
+          </div>
+
         </div>
       </section>
 
-      <section class="review">
+      <section class="review container ">
         <h2 class="visually-hidden">Обзоры</h2>
         <ul class="review__list">
           <li class="review__item">
@@ -167,7 +178,7 @@
 
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
-        <table class="price__table">
+        <table class="price__table container">
           <thead class="price__head">
             <tr class="price__row price__row--head">
               <td class="price__cell--left-title"></td>
@@ -299,12 +310,12 @@
         </ol>
       </section>
 
-      <section class="contacts">
+      <section class="contacts ">
         <h2 class="visually-hidden">Контакты</h2>
 
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
 
-        <div class="contacts__list">
+        <div class="contacts__list container">
           <div class="contacts__item">
             <p class="contacts__item-title">Звоните:</p>
             <a class="contacts__item-text" href="tel:+78125556666"
@@ -331,7 +342,7 @@
       </section>
     </main>
 
-    <footer class="page__page-footer page-footer">
+    <footer class="page__page-footer page-footer container">
       <a class="page-footer__logo" href="index.html">
          <span class="visually-hidden">Pink</span>
       </a>

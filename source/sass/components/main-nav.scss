@@ -47,19 +47,19 @@
     position: absolute;
     top: 0;
 
-    &::before {
-      content: "";
-      display: flex;
-      height: 63px;
-      width: 100%;
-      background: $color-4;
-      border-top: 1px solid $color-2-15;
-      border-bottom: 1px solid $color-3;
-    }
+    // &::before {
+    //   content: "";
+    //   display: flex;
+    //   height: 63px;
+    //   width: 100%;
+    //   background: $color-4;
+    //   border-top: 1px solid $color-2-15;
+    //   border-bottom: 1px solid $color-3;
+    // }
   }
 
   // класс для скрытия меню с js
-  &--hide {
+  &--close {
     display: none;
   }
 }
@@ -92,6 +92,8 @@
 }
 
 @media (min-width: $tablet-width) {
+
+
   .main-nav__logo {
     display: flex;
     background: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
@@ -112,9 +114,8 @@
     height: 40px;
   }
 
-  .main-nav {
+  .main-nav__container {
     display: flex;
-    padding: 0 130px;
     flex-wrap: wrap;
   }
 
