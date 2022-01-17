@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   color: $color-2;
   background-color: $color-1;
   background-size: cover;
@@ -7,63 +6,41 @@
 }
 
 .page-header__wrap {
-  position: relative;
+  color: $color-2;
+  background: url("../img/page-header/back-mobile.jpg") no-repeat;
+  background-position: top;
 
-  &::before {
-    content: "";
-    position: absolute;
-    color: $color-2;
-    background: url("../img/page-header/back-mobile.jpg") no-repeat $color-1;
-    background-size: cover;
-    min-height: 237px;
-    width: 100%;
-    max-height: 462px;
-  }
-
-  &--index {
-    min-height: 462px;
-  }
-
-  &--index::before {
-    content: "";
-    position: absolute;
-    background: url("../img/page-header/phone-background.png") no-repeat bottom, url("../img/page-header/back-mobile.jpg") no-repeat $color-1;
-    background-size: auto, cover;
-    min-height: 462px;
-    width: 100%;
-  }
-}
-
-.page-header__wrap-header-content {
-  position: relative;
-  padding: 0 20px;
+  background-size: cover;
+  min-height: 237px;
 }
 
 .page-header__title {
   margin: 0;
-  padding: 20px 0;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   font-size: $font-size-3;
   font-weight: $font-weight-1;
   line-height: $line-height-3;
+
+  &--index::after {
+    content: "";
+    display: block;
+    background: url("../img/page-header/phone-background.png") no-repeat bottom;
+    background-size: contain;
+    width: 100%;
+    height: 286px;
+    bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrap {
-    min-height: 440px;
-
-    &::before {
-      min-height: 440px;
-    }
-
-    &--index {
-      min-height: 729px;
-    }
-
     &--index::before {
-      min-height: 729px;
       background-size: 545px, cover;
       background-position: bottom right, top;
     }
@@ -71,15 +48,20 @@
 
   .page-header__wrap-header-content {
     &--index {
-      width: 300px;
-      position: relative;
-      // margin-top: 102px;
+      background: url("../img/page-header/phone-background.png") no-repeat bottom right;
+      background-size: contain;
+      min-height: 545px;
     }
   }
 
   .page-header__title {
+    width: 300px;
     font-size: $font-size-4;
     line-height: $line-height-4;
+
+    &--index::after {
+      display: none;
+    }
   }
 }
 
@@ -90,18 +72,7 @@
   }
 
   .page-header__wrap {
-    min-height: 394px;
-
-    &::before {
-      min-height: 394px;
-    }
-
-    &--index {
-      min-height: 853px;
-    }
-
     &--index::before {
-      min-height: 853px;
       background-size: 545px, cover;
       background-position: bottom right 130px, top;
     }
@@ -111,8 +82,7 @@
     padding: 0;
 
     &--index {
-      position: relative;
-      // padding: 0 130px;
+      min-height: 645px;
     }
   }
 }
