@@ -22,7 +22,7 @@
             </div>
 
             <!-- класс для отключения main-nav__list--close -->
-            <ul class="main-nav__list main-nav__list--close">
+            <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__button-link" href="index.html">Главная</a></li>
               <li class="main-nav__item"><a class="main-nav__button-link" href="catalog.html">Фотографии</a></li>
               <li class="main-nav__item"><a class="main-nav__button-link" href="form.html">Конкурс</a></li>
@@ -72,7 +72,6 @@
           </div>
         </div>
       </div>
-
     </header>
 
     <main class="page__page-main page-main">
@@ -148,11 +147,11 @@
         </ul>
 
         <div class="review__pagination-arrow">
-          <button class="review__pagination-arrow--back button" type="button">
+          <button class="review__button-arrow review__button-arrow--back button" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
 
-          <button class="review__pagination-arrow--next button" type="button">
+          <button class="review__button-arrow review__button-arrow--next button" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
         </div>
@@ -181,7 +180,7 @@
         <table class="price__table container">
           <thead class="price__head">
             <tr class="price__row price__row--head">
-              <td class="price__cell--left-title"></td>
+              <td class="price__cell price__cell--invisible"></td>
 
               <td class="price__cell price__cell--title">
                 <h3 class="price__title">База</h3>

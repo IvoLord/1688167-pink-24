@@ -19,6 +19,11 @@
   outline: 2px solid #e5e5e5;
   background-color: #ffffff;
 
+  &--invisible {
+    outline: none;
+    background: transparent;
+  }
+
   &--title {
     text-align: center;
     background-color: $color-4;

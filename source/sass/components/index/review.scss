@@ -69,7 +69,7 @@
     display: block;
   }
 
-  .review__block-comment{
+  .review__block-comment {
     &::before {
       content: "";
       // outline: 1px solid red;
@@ -87,7 +87,9 @@
     top: 50px;
     left: 0;
     right: 0;
+  }
 
+  .review__button-arrow {
     &--back {
       background: url("../img/index/review/left arrow.svg") no-repeat;
       min-width: 22px;
