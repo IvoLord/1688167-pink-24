@@ -9,22 +9,25 @@
     <header class="page__page-header page-header">
       <div class="page-header__wrap">
         <nav class="page-header__main-nav main-nav">
-          <div class="main-nav__wrap-nav">
-            <a class="main-nav__logo" href="index.html">
-              <span class="visually-hidden">Pink</span>
-            </a>
+         <div class="main-nav__container container">
+            <div class="main-nav__wrap-nav">
+              <a class="main-nav__logo" href="index.html">
+                <span class="visually-hidden">Pink</span>
+              </a>
 
-            <button class="main-nav__toggle main-nav__toggle--open button" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
+              <button class="main-nav__toggle main-nav__toggle--open button" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
 
-          <ul class="main-nav__list main-nav__list--hide">
-            <li class="main-nav__item"><a class="main-nav__button-link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link" href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
+            <!-- класс для отключения main-nav__list--close -->
+            <ul class="main-nav__list main-nav__list--close">
+              <li class="main-nav__item"><a class="main-nav__button-link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__button-link" href="https://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+        </div>
         </nav>
 
         <div class="page-header__wrap-header-content ">
@@ -51,8 +54,8 @@
                 height="137"
               />
             </a>
-
-            <blockquote class="gallery__tex-content gallery__tex-content--day-pic">
+          <div class="container">
+            <blockquote class=" gallery__tex-content gallery__tex-content--day-pic ">
               <div class="gallery__head">
                 <p class="gallery__name">Анна</p>
                 <p class="gallery__date">(5 минут назад)</p>
@@ -66,9 +69,10 @@
                 Нравится: <span class="gallery__like-count">215</span>
               </button>
             </blockquote>
+          </div>
         </div>
 
-        <ul class="gallery__list">
+        <ul class="gallery__list container">
           <li class="gallery__item">
             <a class="gallery__img-link" href="./img/catalog/photo-1-mobile.jpg">
               <img
@@ -223,7 +227,7 @@
         </ul>
       </section>
 
-      <section class="page-main__add-photo add-photo">
+      <section class="page-main__add-photo add-photo container">
         <h3 class="add-photo__title">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </h3>
@@ -299,7 +303,7 @@
       </section>
     </main>
 
-    <footer class="page__page-footer page-footer">
+    <footer class="page__page-footer page-footer container">
       <a class="page-footer__logo" href="index.html">
          <span class="visually-hidden">Pink</span>
       </a>
