@@ -1,5 +1,6 @@
 .intro__social-wraper {
   padding: 22px 20px 38px;
+  background-color: #1d2631;
 }
 
 .intro__button-download {
@@ -17,3 +18,15 @@
   font-weight: $font-weight-1;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .intro {
+    margin-top: 0;
+    width: 300px;
+  }
+
+  .intro__social-wraper {
+    background: transparent;
+  }
+}
+

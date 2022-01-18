@@ -2,16 +2,6 @@
   margin: 0;
   padding: 70px 20px 0;
   text-align: center;
-
-  &::after {
-    width: 157px;
-    height: 320px;
-    margin: 0 auto;
-    content: "";
-    display: flex;
-    background: url("../img/information/phone-smile.jpg") no-repeat;
-    background-position: 0% 40px;
-  }
 }
 
 .advantage-list__item {
@@ -30,3 +20,48 @@
   color: $color-4;
 }
 
+@media (min-width: $tablet-width) {
+  .advantage-list {
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-list {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+
+  .advantage-list__item {
+    text-align: center;
+
+    &:nth-child(1)::before {
+      content: "";
+      margin: 0 auto;
+      display: flex;
+      background: url("../img/index/information/up-happiness.png") no-repeat top;
+      height: 300px;
+    }
+
+    &:nth-child(2)::before {
+      content: "";
+      margin: 0 auto;
+      display: flex;
+      background: url("../img/index/information/change-world.png") no-repeat top;
+      height: 300px;
+    }
+
+    &:nth-child(3)::before {
+      content: "";
+      margin: 0 auto;
+      display: flex;
+      background: url("../img/index/information/new-friends.png") no-repeat top;
+      height: 300px;
+    }
+  }
+}

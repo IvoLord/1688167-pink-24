@@ -1,22 +1,54 @@
 .price {
   padding-top: 127px;
   padding-bottom: 50px;
-  background: linear-gradient(172deg, #ffffff00 15%, #f2f2f2 15%);
+  background: linear-gradient(177deg, #ffffff00 100px, #f2f2f2 100px);
 }
 
 .price__table {
   width: 100%;
+  table-layout: fixed;
 }
 
 .price__cell {
   margin: 0;
-  padding: 0;
+  padding: 25px 42px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  &--invisible {
+    outline: none;
+    background: transparent;
+  }
+
+  &--title {
+    text-align: center;
+    background-color: $color-4;
+    color: $color-2;
+  }
 }
 
-.price__head {
-  text-align: center;
-  background-color: $color-4;
-  color: $color-2;
+.price__cell-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--no::after {
+    content: "";
+    height: 32px;
+    min-width: 32px;
+    background: url("../img/price/no.svg") no-repeat right;
+  }
+
+  &--yes::after {
+    content: "";
+    height: 32px;
+    min-width: 32px;
+    background: url("../img/price/yes.svg") no-repeat right;
+  }
 }
 
 .price__title {
@@ -26,7 +58,7 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  margin-top: 19px;
+  // margin-top: 19px;
 }
 
 .price__price {
@@ -36,100 +68,15 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
-}
-
-.price__row:not(.price__row--head) .price__cell {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding: 25px 42px;
-  outline: 2px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-.price__cell-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.price__row--filter .price__cell-text {
-  &--economy::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
-
-  &--standart::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
-
-  &--vip::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
-}
-
-.price__row--smile .price__cell-text {
-  &--economy::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/no.svg") no-repeat right;
-  }
-
-  &--standart::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
-
-  &--vip::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
-}
-
-.price__row--comments .price__cell-text {
-  &--economy::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/no.svg") no-repeat right;
-  }
-
-  &--standart::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/no.svg") no-repeat right;
-  }
-
-  &--vip::after {
-    content: "";
-    height: 32px;
-    width: 32px;
-    background: url("../img/price/yes.svg") no-repeat right;
-  }
+  // margin-bottom: 35px;
 }
 
 .price__pagination-list {
+  display: none;
   width: 56px;
   margin: 0 auto;
   padding: 0;
   margin-top: 45px;
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -137,4 +84,51 @@
 
 .price__pagination-item {
   list-style: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .price {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__table {
+    width: auto;
+    position: relative;
+    align-items: center;
+  }
+
+  .price__cell {
+    min-width: 280px;
+
+    &--left-title {
+      display: none;
+    }
+  }
+
+  .price__pagination-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding: 0 20px;
+  }
+
+  .price__cell-wrap {
+    justify-content: center;
+  }
+
+  .price__cell-text:not(.price__cell-text--title) {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding: 0;
+  }
 }

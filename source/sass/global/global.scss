@@ -25,10 +25,15 @@
 $font-size-1: 14px;
 $font-size-2: 18px;
 $font-size-3: 24px;
+$font-size-4: 40px;
+$font-size-5: 50px;
+
 
 $line-height-1: 24px;
 $line-height-2: 29px;
 $line-height-3: 33px;
+$line-height-4: 48px;
+$line-height-5: 68px;
 
 $font-weight-1: 300;
 $font-weight-2: 400;
@@ -39,3 +44,19 @@ a {
   text-decoration: none;
 }
 
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
+// Шаблон для вставки
+
+// @media (max-width: $mobile-width-only) {
+// }
+
+// @media (min-width: $tablet-width) {
+// }
+
+// @media (min-width: $desktop-width) {
+// }

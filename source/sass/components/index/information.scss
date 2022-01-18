@@ -11,5 +11,76 @@
 }
 
 .information__advantage-wraper {
-  background: linear-gradient(172deg, #ffffff00 15%, #f2f2f2 15%);
+  background: linear-gradient(177deg, #ffffff00 100px, #f2f2f2 100px);
+  padding: 0 20px;
+
+  &::after {
+    width: 157px;
+    height: 320px;
+    margin: 0 auto;
+    content: "";
+    display: flex;
+    background: url("../img/index/information/phone-smile.jpg") no-repeat;
+    background-position: 0% 40px;
+  }
+}
+
+.information__effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .information__advantage-wraper {
+    display: flex;
+
+    &::after {
+      margin: 0;
+      margin-right: 42px;
+      order: -1;
+      min-width: 258px;
+      height: 541px;
+      background-position: 0% 67px;
+      background-size: 258px 541px;
+    }
+  }
+
+  .information__text-wrap {
+    padding: 58px 16px 0;
+  }
+
+  .information__text {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information__advantage-wraper {
+    padding: 0;
+    display: block;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .information__effect {
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background: url("../img/index/information/24-clock.svg") no-repeat;
+      background-size: 298px 345px;
+      min-width: 298px;
+      height: 345px;
+    }
+
+    .information__effect-wrap {
+      margin-left: 71px;
+      width: auto;
+    }
+  }
 }
