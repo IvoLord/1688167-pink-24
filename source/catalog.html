@@ -66,16 +66,14 @@
                height="137" />
         </a>
         <div class="container">
-          <blockquote
-                      class=" gallery__tex-content gallery__tex-content--day-pic ">
+          <blockquote class=" gallery__tex-content gallery__tex-content--day-pic ">
             <div class="gallery__head">
               <p class="gallery__name">Анна</p>
               <p class="gallery__date">(5 минут назад)</p>
             </div>
 
-            <cite class="gallery__cite">Прыгать или нет? Напишите в комментарии
-              свой совет и смотрите
-              прямую трансляцию в перископе, задавайте свои вопросы!</cite>
+            <cite class="gallery__cite">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
+              в перископе, задавайте свои вопросы!</cite>
             <button class="gallery__like button"
                     type="button">
               Нравится: <span class="gallery__like-count">215</span>
@@ -278,25 +276,46 @@
 
             <div class="add-photo__inputs">
               <div class="add-photo__wrap-range add-photo__wrap-range--crop">
-                <input class="add-photo__input-range add-photo__input-range--crop"
-                       type="range"
-                       name="crop"
-                       id="crop" />
+                <div class="range add-photo__input-range add-photo__input-range--crop">
+                  <div class="range__line">
+                    <div class="range__box">
+                      <button class="toggle"
+                              name="crop"
+                              id="crop">
+                        <span class="visually-hidden">Изменить значение</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               <div class="add-photo__wrap-range add-photo__wrap-range--fill">
-                <input class="add-photo__input-range add-photo__input-range--fill"
-                       type="range"
-                       name="color"
-                       id="color" />
+                <div class="range add-photo__input-range add-photo__input-range--crop">
+                  <div class="range__line">
+                    <div class="range__box">
+                      <button class="toggle"
+                              name="color"
+                              id="color">
+                        <span class="visually-hidden">Изменить значение</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div
-                   class="add-photo__wrap-range add-photo__wrap-range--contrast">
-                <input class="add-photo__input-range add-photo__input-range--contrast"
-                       type="range"
-                       name="brightness"
-                       id="brightness" />
+              <div class="add-photo__wrap-range add-photo__wrap-range--contrast">
+                <div class="range add-photo__input-range add-photo__input-range--crop">
+                  <div class="range__line">
+                    <div class="range__box">
+                      <button class="toggle"
+                              name="brightness"
+                              id="brightness">
+                        <span class="visually-hidden">Изменить значение</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="add-photo__wrap-buttons">
@@ -306,9 +325,9 @@
                         type="reset">Отменить</button>
               </div>
             </div>
+
           </div>
         </fieldset>
-
 
       </form>
     </section>

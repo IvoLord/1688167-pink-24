@@ -1,0 +1,32 @@
+.range {
+  align-self: center;
+}
+
+.range__line {
+  position: relative;
+  height: 2px;
+  background-color: #283645;
+}
+
+.range__box {
+  position: absolute;
+  left: 100%;
+}
+
+.toggle {
+  position: absolute;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -6px;
+  right: -6px;
+
+  &:active {
+    border: 3px solid #283645;
+  }
+}
