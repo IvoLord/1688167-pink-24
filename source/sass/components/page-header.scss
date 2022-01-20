@@ -55,9 +55,12 @@
   }
 
   .page-header__title {
-    width: 300px;
     font-size: $font-size-4;
     line-height: $line-height-4;
+
+    &--index {
+      width: 300px;
+    }
 
     &--index::after {
       display: none;

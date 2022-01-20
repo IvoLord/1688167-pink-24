@@ -126,18 +126,22 @@
 @media (min-width: $desktop-width) {
   .gallery__tex-content {
     &--day-pic {
-      margin: 0 130px;
+      margin: 0;
       margin-bottom: 50px;
     }
   }
 
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 130px;
+    padding: 0;
     gap: 50px 20px;
   }
 
   .gallery__img {
     aspect-ratio: 4/3;
+
+    &--day-pic {
+      height: 506px;
+    }
   }
 }
