@@ -3,7 +3,15 @@
   width: 100%;
   background-color: #00000030;
   box-sizing: border-box;
-  // padding: 0 20px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+
+  &--opened {
+    box-sizing: border-box;
+    background: $color-4;
+    border-top: 1px solid $color-2-15;
+    border-bottom: 1px solid $color-3;
+  }
 }
 
 .main-nav__wrap-nav {
@@ -11,7 +19,7 @@
   // z-index: 1;
 
   padding: 0 20px;
-  height: 63px;
+  height: 66px;
   position: inherit;
   display: flex;
   flex-wrap: wrap;
@@ -20,22 +28,31 @@
 }
 
 .main-nav__toggle {
-  &--open {
-    background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat;
-    width: 50px;
-    height: 24px;
-  }
+  width: 50px;
+  height: 66px;
 
-  &--close {
-    background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat;
-    width: 23px;
-    height: 23px;
+  &--nojs {
+    display: none;
+  }
+  // width: 50px;
+  // height: 24px;
+
+  &--opened {
+    background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
+    background-size: 23px 23px;
+    // width: 23px;
+    // height: 23px;
+  }
+  &--closed {
+    background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
+    background-size: 50px 24px;
   }
 }
 
-//пока нет js пусть будет этот кусок кода
 
 .main-nav__list {
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
   z-index: 0;
@@ -43,9 +60,9 @@
   position: inherit;
 
   // класс для открытия меню с Js
-  &--open {
+  &--opened {
     position: absolute;
-    top: 0;
+    top: 67px;
 
     // &::before {
     //   content: "";
@@ -59,7 +76,7 @@
   }
 
   // класс для скрытия меню с js
-  &--close {
+  &--closed {
     display: none;
   }
 }
@@ -72,6 +89,7 @@
   background: $color-4;
   border-top: 1px solid $color-2-15;
   border-bottom: 1px solid $color-3;
+  text-transform: uppercase;
 }
 
 .main-nav__button-link {
@@ -79,7 +97,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 63px;
+  min-height: 64px;
 }
 
 @media (max-width: $mobile-width-only) {
