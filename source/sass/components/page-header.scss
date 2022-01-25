@@ -16,6 +16,7 @@
 
 .page-header__title {
   margin: 0;
+  margin-top: 29px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -24,6 +25,7 @@
   line-height: $line-height-3;
 
   &--index::after {
+    margin-top: 34px;
     content: "";
     display: block;
     background: url("../img/page-header/phone-background.png") no-repeat bottom;
@@ -40,6 +42,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrap {
+    min-height: 440px;
+
+    &--index {
+      min-height: 729px;
+    }
+
     &--index::before {
       background-size: 545px, cover;
       background-position: bottom right, top;
@@ -48,9 +56,9 @@
 
   .page-header__wrap-header-content {
     &--index {
-      background: url("../img/page-header/phone-background.png") no-repeat bottom right;
-      background-size: contain;
-      min-height: 545px;
+      background: url("../img/page-header/phone-background.png") no-repeat bottom right -100px;
+      background-size: auto 545px;
+      min-height: 619px;
     }
   }
 
@@ -59,6 +67,8 @@
     line-height: $line-height-4;
 
     &--index {
+      margin: 0;
+      padding-top: 102px;
       width: 300px;
     }
 
@@ -72,6 +82,11 @@
   .page-header__title {
     font-size: $font-size-5;
     line-height: $line-height-5;
+    &--index {
+      margin: 0;
+      padding-top: 114px;
+      width: 300px;
+    }
   }
 
   .page-header__wrap {

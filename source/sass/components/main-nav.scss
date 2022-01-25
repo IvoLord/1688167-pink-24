@@ -15,9 +15,6 @@
 }
 
 .main-nav__wrap-nav {
-  //  может индекс и не нужен протестировать когда будет больше всего
-  // z-index: 1;
-
   padding: 0 20px;
   height: 66px;
   position: inherit;
@@ -34,25 +31,20 @@
   &--nojs {
     display: none;
   }
-  // width: 50px;
-  // height: 24px;
 
   &--opened {
     background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
     background-size: 23px 23px;
-    // width: 23px;
-    // height: 23px;
   }
+
   &--closed {
     background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
     background-size: 50px 24px;
   }
 }
 
-
 .main-nav__list {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
   z-index: 0;
@@ -63,16 +55,6 @@
   &--opened {
     position: absolute;
     top: 67px;
-
-    // &::before {
-    //   content: "";
-    //   display: flex;
-    //   height: 63px;
-    //   width: 100%;
-    //   background: $color-4;
-    //   border-top: 1px solid $color-2-15;
-    //   border-bottom: 1px solid $color-3;
-    // }
   }
 
   // класс для скрытия меню с js
@@ -82,7 +64,6 @@
 }
 
 .main-nav__item {
-
   font-size: $font-size-3;
   font-weight: $font-weight-3;
   line-height: $line-height-2;
@@ -120,6 +101,13 @@
   .main-nav__wrap-nav {
     min-height: 110px;
   }
+
+  .main-nav__list {
+    &--opened {
+      position: absolute;
+      top: 111px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -140,12 +128,13 @@
   }
 
   .main-nav__list {
-    margin-left: 173px;
+    position: relative;
     width: auto;
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    top: auto;
   }
 
   .main-nav__item {
