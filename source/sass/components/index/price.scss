@@ -1,15 +1,32 @@
 .price {
-  padding-top: 127px;
+  position: relative;
+  padding-top: 140px;
   padding-bottom: 50px;
-  background: linear-gradient(177deg, #ffffff00 100px, #f2f2f2 100px);
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    min-width: 1200px;
+    height: 100%;
+    left: 50%;
+    margin-left: -600px;
+    background: url("../img/index/grey_background.svg") no-repeat, linear-gradient(180deg, #ffffff00 200px, #f2f2f2 200px) no-repeat;
+    background-size: 100%;
+    top: 0%;
+  }
 }
 
 .price__table {
   width: 100%;
   table-layout: fixed;
+  margin-bottom: 40px;
 }
 
 .price__cell {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
   margin: 0;
   padding: 25px 42px;
   font-size: 14px;
@@ -18,6 +35,23 @@
   text-transform: uppercase;
   outline: 2px solid #e5e5e5;
   background-color: #ffffff;
+
+
+  // не получается разместить за тескстом, бефор вылазит наверх ((
+  &--hit::before {
+    width: 300px;
+    min-height: 24px;
+    content: "Хит";
+    position: absolute;
+    left: -125px;
+    top: 9px;
+    background-color: #d22856;
+    transform: rotate(-45deg);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
 
   &--invisible {
     outline: none;

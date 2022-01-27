@@ -28,7 +28,6 @@
             </button>
           </div>
 
-          <!-- класс для отключения main-nav__list--close -->
           <ul class="main-nav__list ">
             <li class="main-nav__item"><a class="main-nav__button-link"
                  href="index.html">Главная</a></li>
@@ -93,52 +92,47 @@
       <h2 class="visually-hidden">Информация</h2>
 
       <div class="information__text-wrap">
-
         <p class="information__text">Устали от серости мегаполиса?</p>
         <p class="information__text">Нам есть, что вам <br> предложить!</p>
       </div>
 
       <div class="information__advantage-wraper">
-        <div class="container">
+        <ul class="information__advantage-list advantage-list">
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Поднимает настроение</h3>
+            <p class="advantage-list__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Меняет мир вокруг</h3>
+            <p class="advantage-list__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Заводит новых друзей</h3>
+            <p class="advantage-list__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+      </div>
 
-          <ul class="information__advantage-list advantage-list">
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Поднимает настроение</h3>
-              <p class="advantage-list__text">
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Меняет мир вокруг</h3>
-              <p class="advantage-list__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantage-list__item">
-              <h3 class="advantage-list__title">Заводит новых друзей</h3>
-              <p class="advantage-list__text">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
-            </li>
-          </ul>
+      <div class="information__effect">
+        <div class="information__effect-wrap">
 
-          <div class="information__effect">
-            <div class="information__effect-wrap">
-
-              <h3 class="information__effect-title">Эффект на 24 часа!</h3>
-              <p class="information__effect-text">Британские ученые провели
-                исследования и доказали,
-                что положительный эффект от использования приложения длится
-                целые сутки!</p>
-              <a class="information__effect-link"
-                 href="#">Узнать больше об исследовании</a>
-            </div>
-          </div>
+          <h3 class="information__effect-title">Эффект </br> на 24 часа!</h3>
+          <p class="information__effect-text">Британские ученые провели
+            исследования и доказали,
+            что положительный эффект от использования приложения длится
+            целые сутки!</p>
+          <a class="information__effect-link"
+             href="#">Узнать больше об исследовании</a>
         </div>
-
       </div>
     </section>
 
@@ -172,19 +166,22 @@
         </button>
       </div>
 
-      <ol class="list review__pagination-list">
-        <li class="review__pagination-item">
-          <button type="button">
+      <ol class="list pagination__dott-list">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button pagination__dott-button--active">
             <span class="visually-hidden">1</span>
           </button>
         </li>
-        <li class="review__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">2</span>
           </button>
         </li>
-        <li class="review__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">3</span>
           </button>
         </li>
@@ -196,7 +193,7 @@
       <table class="price__table container">
         <thead class="price__head">
           <tr class="price__row price__row--head">
-            <td class="price__cell price__cell--invisible"></td>
+            <td class="price__cell price__cell--left-title price__cell--invisible"></td>
 
             <td class="price__cell price__cell--title">
               <h3 class="price__title">База</h3>
@@ -307,19 +304,22 @@
         </tr>
       </table>
 
-      <ol class="list price__pagination-list">
-        <li class="price__pagination-item">
-          <button type="button">
+      <ol class="list pagination__dott-list">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">1</span>
           </button>
         </li>
-        <li class="price__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button pagination__dott-button--active">
             <span class="visually-hidden">2</span>
           </button>
         </li>
-        <li class="price__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">3</span>
           </button>
         </li>
