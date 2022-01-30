@@ -11,7 +11,7 @@
     height: 100%;
     left: 50%;
     margin-left: -600px;
-    background: url("../img/index/grey_background.svg") no-repeat, linear-gradient(180deg, #ffffff00 200px, #f2f2f2 200px) no-repeat;
+    background: url("../img/index/grey_background.svg#svgView(preserveAspectRatio(none))") no-repeat, linear-gradient(180deg, #ffffff00 200px, #f2f2f2 200px) no-repeat;
     background-size: 100%;
     top: 0%;
   }
@@ -26,6 +26,7 @@
 .price__cell {
   overflow: hidden;
   position: relative;
+  z-index: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 25px 42px;
@@ -36,15 +37,14 @@
   outline: 2px solid #e5e5e5;
   background-color: #ffffff;
 
-
-  // не получается разместить за тескстом, бефор вылазит наверх ((
   &--hit::before {
+    z-index: -1;
     width: 300px;
     min-height: 24px;
     content: "Хит";
     position: absolute;
-    left: -125px;
-    top: 9px;
+    left: -122px;
+    top: 19px;
     background-color: #d22856;
     transform: rotate(-45deg);
     font-style: normal;
@@ -92,7 +92,6 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  // margin-top: 19px;
 }
 
 .price__price {
@@ -102,7 +101,6 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  // margin-bottom: 35px;
 }
 
 .price__pagination-list {
@@ -149,7 +147,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 0 20px;
+    padding: 117px 20px 70px;
   }
 
   .price__cell-wrap {
@@ -159,10 +157,20 @@
   .price__cell-text:not(.price__cell-text--title) {
     display: none;
   }
+
+  .price .price__pagination {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 0;
+    &::before {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      margin-left: 0;
+      background-size: 100% 715px;
+    }
   }
 }
