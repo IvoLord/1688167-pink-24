@@ -16,6 +16,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: #d2285630;
+  }
 }
 
 .button--fill {

@@ -20,6 +20,25 @@
   border-radius: 50%;
   border: none;
   background-color: #28364530;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    left: -5px;
+    top: -5px;
+  }
+
+  &:hover {
+    background-color: #28364560;
+  }
+
+  &:active {
+    background-color: #28364510;
+  }
 
   &--active {
     width: 6px;

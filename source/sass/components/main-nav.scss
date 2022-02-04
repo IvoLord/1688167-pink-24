@@ -35,11 +35,29 @@
   &--opened {
     background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
     background-size: 23px 23px;
+
+    &:hover {
+      mask: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 
   &--closed {
     background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
     background-size: 50px 24px;
+
+    &:hover {
+      mask: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }
 
@@ -74,11 +92,20 @@
 }
 
 .main-nav__button-link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 64px;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -87,6 +114,15 @@
     background: url("../img/page-header/main-nav/pink.svg") no-repeat;
     min-width: 74px;
     height: 23px;
+
+    &:hover:not(:active) {
+      mask: url("../img/page-header/main-nav/pink.svg") no-repeat;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -96,6 +132,15 @@
     background: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
     min-width: 145px;
     height: 40px;
+
+    &:hover:not(:active) {
+      mask: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__wrap-nav {
@@ -146,5 +191,30 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+  }
+
+  .main-nav__button-link {
+    text-transform: none;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #ffffff30;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 25px;
+        background-color: #ffffff;
+      }
+    }
   }
 }
