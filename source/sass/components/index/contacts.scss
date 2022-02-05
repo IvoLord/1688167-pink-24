@@ -79,9 +79,10 @@
 }
 
 .contacts__map-img {
+  display: block;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 @media (min-width: $tablet-width) {
@@ -91,6 +92,10 @@
     &::before {
       height: 79px;
     }
+  }
+
+  .contacts__map-img {
+    height: 374px;
   }
 }
 
@@ -105,5 +110,9 @@
     &::before {
       height: 102px;
     }
+  }
+
+  .contacts__map-img {
+    height: 502px;
   }
 }
