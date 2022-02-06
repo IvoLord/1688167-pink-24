@@ -1,15 +1,33 @@
 .price {
-  padding-top: 127px;
+  position: relative;
+  padding-top: 140px;
   padding-bottom: 50px;
-  background: linear-gradient(177deg, #ffffff00 100px, #f2f2f2 100px);
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    min-width: 1200px;
+    height: 100%;
+    left: 50%;
+    margin-left: -600px;
+    background: url("../img/index/grey_background.svg#svgView(preserveAspectRatio(none))") no-repeat, linear-gradient(180deg, #ffffff00 200px, #f2f2f2 200px) no-repeat;
+    background-size: 100%;
+    top: 0%;
+  }
 }
 
 .price__table {
   width: 100%;
   table-layout: fixed;
+  margin-bottom: 40px;
 }
 
 .price__cell {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
   margin: 0;
   padding: 25px 42px;
   font-size: 14px;
@@ -18,6 +36,22 @@
   text-transform: uppercase;
   outline: 2px solid #e5e5e5;
   background-color: #ffffff;
+
+  &--hit::before {
+    z-index: -1;
+    width: 300px;
+    min-height: 24px;
+    content: "Хит";
+    position: absolute;
+    left: -122px;
+    top: 19px;
+    background-color: #d22856;
+    transform: rotate(-45deg);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
 
   &--invisible {
     outline: none;
@@ -58,7 +92,6 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  // margin-top: 19px;
 }
 
 .price__price {
@@ -68,7 +101,6 @@
   line-height: 30px;
   padding: 0;
   margin: 0;
-  // margin-bottom: 35px;
 }
 
 .price__pagination-list {
@@ -115,7 +147,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 0 20px;
+    padding: 117px 20px 70px;
   }
 
   .price__cell-wrap {
@@ -125,10 +157,20 @@
   .price__cell-text:not(.price__cell-text--title) {
     display: none;
   }
+
+  .price .price__pagination {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 0;
+    &::before {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      margin-left: 0;
+      background-size: 100% 715px;
+    }
   }
 }

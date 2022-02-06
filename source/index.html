@@ -22,15 +22,14 @@
               <span class="visually-hidden">Pink</span>
             </a>
 
-            <button class="main-nav__toggle main-nav__toggle--open button"
+            <button class="main-nav__toggle main-nav__toggle--nojs main-nav__toggle--closed button"
                     type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
-          <!-- класс для отключения main-nav__list--close -->
-          <ul class="main-nav__list main-nav__list--close">
-            <li class="main-nav__item"><a class="main-nav__button-link"
+          <ul class="main-nav__list ">
+            <li class="main-nav__item"><a class="main-nav__button-link main-nav__button-link--active"
                  href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__button-link"
                  href="catalog.html">Фотографии</a></li>
@@ -43,8 +42,7 @@
       </nav>
 
       <div class="container">
-        <div
-             class="page-header__wrap-header-content page-header__wrap-header-content--index">
+        <div class="page-header__wrap-header-content page-header__wrap-header-content--index">
           <h1 class="page-header__title page-header__title--index">Взгляните на
             жизнь иначе!</h1>
 
@@ -94,15 +92,12 @@
       <h2 class="visually-hidden">Информация</h2>
 
       <div class="information__text-wrap">
-
         <p class="information__text">Устали от серости мегаполиса?</p>
         <p class="information__text">Нам есть, что вам <br> предложить!</p>
       </div>
 
-
       <div class="information__advantage-wraper">
         <div class="container">
-
           <ul class="information__advantage-list advantage-list">
             <li class="advantage-list__item">
               <h3 class="advantage-list__title">Поднимает настроение</h3>
@@ -126,25 +121,25 @@
               </p>
             </li>
           </ul>
+        </div>
+      </div>
 
-          <div class="information__effect">
-            <div class="information__effect-wrap">
-
-              <h3 class="information__effect-title">Эффект на 24 часа!</h3>
-              <p class="information__effect-text">Британские ученые провели
-                исследования и доказали,
-                что положительный эффект от использования приложения длится
-                целые сутки!</p>
-              <a class="information__effect-link"
-                 href="#">Узнать больше об исследовании</a>
-            </div>
+      <div class="container">
+        <div class="information__effect">
+          <div class="information__effect-wrap">
+            <h3 class="information__effect-title">Эффект </br> на 24 часа!</h3>
+            <p class="information__effect-text">Британские ученые провели
+              исследования и доказали,
+              что положительный эффект от использования приложения длится
+              целые сутки!</p>
+            <a class="information__effect-link"
+               href="#">Узнать больше об исследовании</a>
           </div>
         </div>
-
       </div>
     </section>
 
-    <section class="review container ">
+    <section class="review container">
       <h2 class="visually-hidden">Обзоры</h2>
       <ul class="review__list">
         <li class="review__item">
@@ -174,19 +169,22 @@
         </button>
       </div>
 
-      <ol class="list review__pagination-list">
-        <li class="review__pagination-item">
-          <button type="button">
+      <ol class="list pagination__dott-list">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button pagination__dott-button--active">
             <span class="visually-hidden">1</span>
           </button>
         </li>
-        <li class="review__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">2</span>
           </button>
         </li>
-        <li class="review__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">3</span>
           </button>
         </li>
@@ -194,11 +192,12 @@
     </section>
 
     <section class="price">
+
       <h2 class="visually-hidden">Цены</h2>
       <table class="price__table container">
         <thead class="price__head">
           <tr class="price__row price__row--head">
-            <td class="price__cell price__cell--invisible"></td>
+            <td class="price__cell price__cell--left-title price__cell--invisible"></td>
 
             <td class="price__cell price__cell--title">
               <h3 class="price__title">База</h3>
@@ -250,8 +249,7 @@
 
         <tr class="price__row price__row--smile">
           <td class="price__cell price__cell--left-title">
-            <span
-                  class="price__cell-text price__cell-text--title">Смайлики</span>
+            <span class="price__cell-text price__cell-text--title">Смайлики</span>
           </td>
 
           <td class="price__cell">
@@ -281,8 +279,7 @@
 
         <tr class="price__row price__row--comments">
           <td class="price__cell price__cell--left-title">
-            <span
-                  class="price__cell-text  price__cell-text--title">Коментарии</span>
+            <span class="price__cell-text  price__cell-text--title">Коментарии</span>
           </td>
 
           <td class="price__cell">
@@ -311,23 +308,27 @@
         </tr>
       </table>
 
-      <ol class="list price__pagination-list">
-        <li class="price__pagination-item">
-          <button type="button">
+      <ol class="list pagination__dott-list price__pagination">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">1</span>
           </button>
         </li>
-        <li class="price__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button pagination__dott-button--active">
             <span class="visually-hidden">2</span>
           </button>
         </li>
-        <li class="price__pagination-item">
-          <button type="button">
+        <li class="pagination__dott-item">
+          <button type="button"
+                  class="pagination__dott-button">
             <span class="visually-hidden">3</span>
           </button>
         </li>
       </ol>
+
     </section>
 
     <section class="contacts ">
@@ -344,7 +345,7 @@
 
         <div class="contacts__item">
           <p class="contacts__item-title">Пишите:</p>
-          <a class="contacts__item-text"
+          <a class="contacts__item-text contacts__item-text--link"
              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
 
@@ -355,48 +356,61 @@
       </div>
 
       <div class="contacts__map">
-        <img class="contacts__map-img"
+        <iframe class="contacts__map-img"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rosja%2C%20191186!5e0!3m2!1spl!2spl!4v1644069962388!5m2!1spl!2spl"
+                width="320"
+                height="200"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+
+        <!-- <img class="contacts__map-img"
              src="img/map.png"
              width="320"
              height="200"
-             alt="Карта." />
+             alt="Карта." /> -->
       </div>
     </section>
   </main>
 
-  <footer class="page__page-footer page-footer container">
-    <a class="page-footer__logo"
-       href="index.html">
-      <span class="visually-hidden">Pink</span>
-    </a>
+  <div class="container">
+    <footer class="page__page-footer page-footer ">
 
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--twitter"
-           href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--facebook"
-           href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--youtube"
-           href="#">
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-    </ul>
+      <a class="page-footer__logo"
+         href="index.html">
+        <span class="visually-hidden">Pink</span>
+      </a>
 
-    <a class="page-footer__copyright"
-       href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="page-footer__copyright-text"> Разработано</span>
-      <span class="visually-hidden">HTML Academy</span>
-    </a>
-  </footer>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter"
+             href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook"
+             href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube"
+             href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="page-footer__copyright"
+         href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__copyright-text"> Разработано</span>
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </footer>
+  </div>
+
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>

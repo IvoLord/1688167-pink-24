@@ -3,15 +3,20 @@
   width: 100%;
   background-color: #00000030;
   box-sizing: border-box;
-  // padding: 0 20px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+
+  &--opened {
+    box-sizing: border-box;
+    background: $color-4;
+    border-top: 1px solid $color-2-15;
+    border-bottom: 1px solid $color-3;
+  }
 }
 
 .main-nav__wrap-nav {
-  //  может индекс и не нужен протестировать когда будет больше всего
-  // z-index: 1;
-
   padding: 0 20px;
-  height: 63px;
+  height: 66px;
   position: inherit;
   display: flex;
   flex-wrap: wrap;
@@ -20,22 +25,44 @@
 }
 
 .main-nav__toggle {
-  &--open {
-    background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat;
-    width: 50px;
-    height: 24px;
+  width: 50px;
+  height: 66px;
+
+  &--nojs {
+    display: none;
   }
 
-  &--close {
-    background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat;
-    width: 23px;
-    height: 23px;
+  &--opened {
+    background: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
+    background-size: 23px 23px;
+
+    &:hover {
+      mask: url("../img/page-header/icon/close-menu-btn.svg") no-repeat center;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+
+  &--closed {
+    background: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
+    background-size: 50px 24px;
+
+    &:hover {
+      mask: url("../img/page-header/icon/open-menu-btn.svg") no-repeat center;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }
 
-//пока нет js пусть будет этот кусок кода
-
 .main-nav__list {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   z-index: 0;
@@ -43,43 +70,42 @@
   position: inherit;
 
   // класс для открытия меню с Js
-  &--open {
+  &--opened {
     position: absolute;
-    top: 0;
-
-    // &::before {
-    //   content: "";
-    //   display: flex;
-    //   height: 63px;
-    //   width: 100%;
-    //   background: $color-4;
-    //   border-top: 1px solid $color-2-15;
-    //   border-bottom: 1px solid $color-3;
-    // }
+    top: 67px;
   }
 
   // класс для скрытия меню с js
-  &--close {
+  &--closed {
     display: none;
   }
 }
 
 .main-nav__item {
-
   font-size: $font-size-3;
   font-weight: $font-weight-3;
   line-height: $line-height-2;
   background: $color-4;
   border-top: 1px solid $color-2-15;
   border-bottom: 1px solid $color-3;
+  text-transform: uppercase;
 }
 
 .main-nav__button-link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 63px;
+  min-height: 64px;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -88,6 +114,15 @@
     background: url("../img/page-header/main-nav/pink.svg") no-repeat;
     min-width: 74px;
     height: 23px;
+
+    &:hover:not(:active) {
+      mask: url("../img/page-header/main-nav/pink.svg") no-repeat;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -97,10 +132,26 @@
     background: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
     min-width: 145px;
     height: 40px;
+
+    &:hover:not(:active) {
+      mask: url("../img/page-header/main-nav/logotype-white-tablet.svg") no-repeat;
+      background: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__wrap-nav {
     min-height: 110px;
+  }
+
+  .main-nav__list {
+    &--opened {
+      position: absolute;
+      top: 111px;
+    }
   }
 }
 
@@ -122,12 +173,13 @@
   }
 
   .main-nav__list {
-    margin-left: 173px;
+    position: relative;
     width: auto;
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    top: auto;
   }
 
   .main-nav__item {
@@ -139,5 +191,30 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+  }
+
+  .main-nav__button-link {
+    text-transform: none;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #ffffff30;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 25px;
+        background-color: #ffffff;
+      }
+    }
   }
 }

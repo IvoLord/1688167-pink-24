@@ -8,29 +8,19 @@
   list-style: none;
 }
 
-.review__review__block-name {
+.review__block-name {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  font-style: normal;
 }
 
 .review__block-bio {
-  font-weight: 300;
-}
-
-.review__pagination-list {
-  width: 56px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-.review__pagination-item {
-  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
 }
 
 @media (max-width: $mobile-width-only) {
