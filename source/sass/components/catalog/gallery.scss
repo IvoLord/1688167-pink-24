@@ -1,5 +1,5 @@
 .gallery__text {
-  padding: 20px 20px;
+  padding: 54px 20px 60px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -40,14 +40,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  // &--day-pic {
-  //   padding: 0 0;
-  // }
-
-  // &--day-pic .gallery__tex-content {
-  //   margin: 0 20px;
-  // }
 }
 
 .gallery__img-link {
@@ -147,6 +139,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gallery__text {
+    font-size: 18px;
+    margin: 100px 20px 85px;
+  }
+
+  .gallery__text br {
+    display: none;
+  }
+
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -211,6 +212,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .gallery__text {
+    font-size: 18px;
+    margin: 100px 20px 97px;
+  }
+
+  .gallery__text br {
+    display: inline;
+  }
+
   .gallery__tex-content {
     &--day-pic {
       margin: 0;
