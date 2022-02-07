@@ -16,13 +16,18 @@
 
 .page-header__title {
   margin: 0;
-  margin-top: 29px;
+  margin-top: 36px;
+  padding: 0 20px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   font-size: $font-size-3;
   font-weight: $font-weight-1;
   line-height: $line-height-3;
+
+  &--index {
+    margin-top: 29px;
+  }
 
   &--index::after {
     margin-top: 34px;
@@ -82,6 +87,7 @@
   .page-header__title {
     font-size: $font-size-5;
     line-height: $line-height-5;
+
     &--index {
       margin: 0;
       padding-top: 114px;

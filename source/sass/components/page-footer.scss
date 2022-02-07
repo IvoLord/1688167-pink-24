@@ -3,7 +3,6 @@
 }
 
 .page-footer__logo {
-  // padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +14,7 @@
     mask: url("../img/page-footer/logotype-blue-tablet.svg") no-repeat center;
     background: #d22856;
   }
- 
+
   &:active {
     opacity: 0.3;
   }

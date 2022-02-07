@@ -22,17 +22,16 @@
               <span class="visually-hidden">Pink</span>
             </a>
 
-            <button class="main-nav__toggle main-nav__toggle--open button"
+            <button class="main-nav__toggle main-nav__toggle--nojs main-nav__toggle--closed button"
                     type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
-          <!-- класс для отключения main-nav__list--close -->
-          <ul class="main-nav__list main-nav__list--close">
-            <li class="main-nav__item"><a class="main-nav__button-link"
+          <ul class="main-nav__list ">
+            <li class="main-nav__item"><a class="main-nav__button-link "
                  href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__button-link"
+            <li class="main-nav__item"><a class="main-nav__button-link main-nav__button-link--active"
                  href="catalog.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__button-link"
                  href="form.html">Конкурс</a></li>
@@ -42,8 +41,10 @@
         </div>
       </nav>
 
-      <div class="page-header__wrap-header-content ">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="container">
+        <div class="page-header__wrap-header-content">
+          <h1 class="page-header__title">Фотографии <br> пользователей</h1>
+        </div>
       </div>
     </div>
   </header>
@@ -65,6 +66,11 @@
                width="320"
                height="137" />
         </a>
+
+        <div class="gallery__wrap-pano-day">
+          <p class="gallery__pano-day">Панорама дня</p>
+        </div>
+
         <div class="container">
           <blockquote class=" gallery__tex-content gallery__tex-content--day-pic ">
             <div class="gallery__head">
@@ -74,9 +80,9 @@
 
             <cite class="gallery__cite">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
               в перископе, задавайте свои вопросы!</cite>
-            <button class="gallery__like button"
+            <button class="gallery__like gallery__like--day-pic"
                     type="button">
-              Нравится: <span class="gallery__like-count">215</span>
+              Нравится:&nbsp<span class="gallery__like-count">215</span>
             </button>
           </blockquote>
         </div>
@@ -101,9 +107,9 @@
             <cite class="gallery__cite">Вчера он на луну летал, сегодня в руки к
               нам попал.</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">356</span>
+              Нравится:&nbsp<span class="gallery__like-count">356</span>
             </button>
           </blockquote>
         </li>
@@ -126,9 +132,9 @@
 
             <cite class="gallery__cite">Соседи будут рады!</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">666</span>
+              Нравится:&nbsp<span class="gallery__like-count">666</span>
             </button>
           </blockquote>
         </li>
@@ -152,9 +158,9 @@
             <cite class="gallery__cite">Здесь могла быть ваша цитата о высоком и
               вечном.</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">215</span>
+              Нравится:&nbsp<span class="gallery__like-count">215</span>
             </button>
           </blockquote>
         </li>
@@ -177,9 +183,9 @@
 
             <cite class="gallery__cite">Самая кубанская в мире!</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">4</span>
+              Нравится:&nbsp<span class="gallery__like-count">4</span>
             </button>
           </blockquote>
         </li>
@@ -202,9 +208,9 @@
 
             <cite class="gallery__cite">Где снег-то?</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">150</span>
+              Нравится:&nbsp<span class="gallery__like-count">150</span>
             </button>
           </blockquote>
         </li>
@@ -227,9 +233,9 @@
 
             <cite class="gallery__cite">Всем GM и взаимные лайки!</cite>
 
-            <button class="gallery__like button"
+            <button class="gallery__like"
                     type="button">
-              Нравится: <span class="gallery__like-count">2560</span>
+              Нравится:&nbsp<span class="gallery__like-count">2560</span>
             </button>
           </blockquote>
         </li>
@@ -333,39 +339,43 @@
     </section>
   </main>
 
-  <footer class="page__page-footer page-footer container">
-    <a class="page-footer__logo"
-       href="index.html">
-      <span class="visually-hidden">Pink</span>
-    </a>
+  <div class="container">
+    <footer class="page__page-footer page-footer ">
+      <a class="page-footer__logo"
+         href="index.html">
+        <span class="visually-hidden">Pink</span>
+      </a>
 
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--twitter"
-           href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--facebook"
-           href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link page-footer__social-link--youtube"
-           href="#">
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-    </ul>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter"
+             href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook"
+             href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube"
+             href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
 
-    <a class="page-footer__copyright"
-       href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="page-footer__copyright-text"> Разработано</span>
-      <span class="visually-hidden">HTML Academy</span>
-    </a>
-  </footer>
+      <a class="page-footer__copyright"
+         href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__copyright-text"> Разработано</span>
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </footer>
+  </div>
+
+  <script src="../js/menu.js"></script>
 </body>
 
 </html>
