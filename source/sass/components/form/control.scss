@@ -1,0 +1,62 @@
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control__input {
+  & + .control__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:active {
+      border-color: #d22856;
+    }
+  }
+
+  &[type="checkbox"] {
+    & + .control__mark {
+      width: 35px;
+      height: 35px;
+    }
+
+    &:checked + .control__mark::before {
+      content: "";
+      position: absolute;
+      background: url("../img/form/control/tick.svg") no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &[type="radio"] {
+    & + .control__mark {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+    }
+
+    &:checked + .control__mark {
+      &::before {
+        content: "";
+        background: #d22856 no-repeat center;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+.control__label {
+  margin-left: 22px;
+}
