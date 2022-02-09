@@ -166,7 +166,6 @@
     &:not(:first-child) {
       border: 2px solid #e5e5e5;
       padding: 50px 60px;
-      margin: 0 20px;
     }
 
     &:not(:last-child) {
@@ -192,6 +191,9 @@
     &--achivement {
       order: 0;
     }
+  }
+
+  .page-form__group-title {
   }
 
   .page-form__item {
@@ -281,6 +283,10 @@
     &:not(:first-child) {
       margin-left: 0;
       margin-right: 0;
+    }
+
+    &--name {
+      align-self: flex-end;
     }
 
     &--contacts {

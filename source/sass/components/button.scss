@@ -34,6 +34,19 @@
   text-transform: uppercase;
   color: $color-2;
   background: $color-5;
-  border: 2px solid $color-5;
+  // border: 2px solid $color-5;
   border-radius: 1px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #ffffff30;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }
