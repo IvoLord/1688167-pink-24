@@ -43,6 +43,10 @@
   line-height: 30px;
   color: $color-4;
 
+  &:not(:first-child) {
+    margin-top: 47px;
+  }
+
   &--name {
     &:not(:first-child) {
       margin-top: 29px;
@@ -112,7 +116,31 @@
   justify-content: center;
 }
 
+.page-form__button {
+  width: 100%;
+  min-height: 59px;
+}
+
 @media (max-width: $mobile-width-only) {
+  .page-form__group {
+    &--background {
+      padding: 0 0 44px;
+      background: #f2f2f2;
+
+      & .page-form__group-title {
+        background: #f2f2f2;
+        padding: 42px 20px 44px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      & .page-form__list {
+        padding: 0 20px;
+      }
+    }
+  }
+
+
   .page-form__label-text {
     margin-left: 23px;
   }
@@ -182,10 +210,41 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      &.page-form__label-text {
+        order: 2;
+      }
+    }
+  }
+
+  .page-form__wrap-input {
+    display: flex;
+    width: 100%;
+
+    &::after {
+      content: "";
+      background-color: #e5e5e5;
+      display: flex;
+      min-width: 59px;
+      min-height: 59px;
     }
 
-    &--contacts .page-form__label-text {
-      order: 2;
+    &--phone {
+      &::after {
+        background-image: url("../img/form/phone_icon.svg");
+        background-repeat: no-repeat;
+        background-size: 20px 19px;
+        background-position: center;
+      }
+    }
+
+    &--mail {
+      &::after {
+        background-image: url("../img/form/mail_icon.svg");
+        background-repeat: no-repeat;
+        background-size: 18px 13px;
+        background-position: center;
+      }
     }
   }
 

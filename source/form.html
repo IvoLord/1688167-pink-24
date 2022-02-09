@@ -97,10 +97,11 @@
         </fieldset>
 
         <fieldset class="page-form__group page-form__group--background page-form__group--achivement">
+
           <legend class="page-form__group-title">
             Ваши безбашенные достижения в путешествии
           </legend>
-          <ul class="page-form__list page-form__list--achivement">
+          <ul class="page-form__list  page-form__list--achivement">
             <li class="page-form__item">
               <label class="control">
                 <input class="control__input visually-hidden"
@@ -204,21 +205,25 @@
             <li class="item page-form__item">
               <label class="page-form__label page-form__label--contacts"><span class="page-form__label-text">Номер
                   телефона</span>
-                <input class="page-form__input"
-                       type="tel"
-                       name="contact"
-                       placeholder="Номер, пожалуйста" />
+                <div class="page-form__wrap-input page-form__wrap-input--phone">
+                  <input class="page-form__input"
+                         type="tel"
+                         name="contact"
+                         placeholder="Номер, пожалуйста" />
+                </div>
               </label>
             </li>
 
             <li class="page-form__item">
               <label class="page-form__label page-form__label--contacts"><span class="page-form__label-text">Адрес
                   почты</span>
-                <input class="page-form__input"
-                       type="email"
-                       name="contact"
-                       placeholder="Введите почту *"
-                       required />
+                <div class="page-form__wrap-input page-form__wrap-input--mail">
+                  <input class="page-form__input"
+                         type="email"
+                         name="contact"
+                         placeholder="Введите почту *"
+                         required />
+                </div>
               </label>
             </li>
           </ul>
